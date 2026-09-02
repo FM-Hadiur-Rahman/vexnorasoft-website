@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Briefcase, Code2, Globe2 } from "lucide-react";
+import { ArrowUpRight, Briefcase, Code2, Globe2, Sparkles } from "lucide-react";
 
 type FounderSectionProps = {
   founder: {
@@ -20,83 +20,143 @@ type FounderSectionProps = {
 
 export default function FounderSection({ founder }: FounderSectionProps) {
   return (
-    <section id="company" className="relative py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-[2.2rem] border border-white/10 bg-gradient-to-br from-slate-900/95 via-slate-900/80 to-blue-950/25 shadow-2xl shadow-black/30 backdrop-blur-xl"
-        >
-          <div className="absolute -left-20 top-10 h-56 w-56 rounded-full bg-blue-500/15 blur-3xl" />
-          <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-indigo-500/15 blur-3xl" />
+    <section
+      id="company"
+      className="relative overflow-hidden bg-[#020617] py-28 lg:py-40"
+    >
+      {/* Background */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute left-[-14%] top-[10%] h-[560px] w-[560px] rounded-full bg-blue-600/[0.08] blur-[160px]" />
 
-          <div className="relative grid items-center gap-12 px-6 py-10 md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:px-14 lg:py-14">
-            <motion.div
-              initial={{ opacity: 0, x: -28 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-            >
-              <div className="relative mx-auto max-w-md">
-                <div className="absolute -inset-4 rounded-[32px] bg-gradient-to-br from-blue-500/20 to-indigo-500/10 blur-2xl" />
+        <div className="absolute right-[-10%] bottom-[0%] h-[620px] w-[620px] rounded-full bg-indigo-600/[0.07] blur-[180px]" />
 
-                <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[#020617]/80 p-3">
-                  <img
-                    src={founder.image}
-                    alt={founder.title}
-                    className="h-[460px] w-full rounded-[22px] object-cover"
-                  />
+        <div className="absolute inset-0 opacity-[0.018] [background-image:linear-gradient(rgba(255,255,255,.18)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.18)_1px,transparent_1px)] [background-size:56px_56px]" />
+      </div>
 
-                  <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/10 bg-[#020617]/75 p-4 backdrop-blur-md">
-                    <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-blue-300">
-                      <Code2 size={16} />
-                      <span>Core Stack</span>
-                    </div>
+      <div className="relative z-10 mx-auto max-w-[1440px] px-6 lg:px-10">
+        {/* Intro */}
+        <div className="grid gap-12 border-b border-white/[0.07] pb-16 lg:grid-cols-[1fr_0.72fr] lg:items-end">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.32em] text-blue-300">
+              <Sparkles className="h-4 w-4" />
+              {founder.badge}
+            </div>
 
-                    <div className="flex flex-wrap gap-2">
-                      {founder.skills.map((skill) => (
-                        <span
-                          key={skill}
-                          className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs text-slate-200"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+            <h2 className="mt-6 max-w-5xl text-5xl font-semibold leading-[0.98] tracking-[-0.055em] text-white sm:text-6xl lg:text-[5rem]">
+              {founder.title}
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.08 }}
+            className="lg:justify-self-end"
+          >
+            <div className="text-lg font-semibold leading-8 text-blue-200">
+              {founder.subtitle}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Founder story */}
+        <div className="mt-20 grid gap-14 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -28 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.65 }}
+            className="relative"
+          >
+            <div className="relative mx-auto max-w-[560px]">
+              {/* Offset frame */}
+              <div className="absolute -left-8 top-8 hidden h-[94%] w-[96%] -rotate-[3deg] rounded-[2.75rem] border border-blue-300/10 bg-blue-500/[0.045] lg:block" />
+
+              <div className="relative overflow-hidden rounded-[2.75rem] border border-white/10 bg-[#07101f] shadow-[0_50px_150px_rgba(0,0,0,0.55)]">
+                <img
+                  src={founder.image}
+                  alt={founder.title}
+                  className="h-[560px] w-full object-cover md:h-[680px]"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent" />
+
+                {/* Image footer */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-blue-300">
+                    Founder / Engineering
+                  </div>
+
+                  <div className="mt-2 text-xl font-semibold text-white">
+                    VexnoraSoft
                   </div>
                 </div>
               </div>
-            </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 28 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.7, delay: 0.15 }}
-            >
-              <span className="inline-flex rounded-full border border-blue-300/20 bg-blue-500/10 px-4 py-1 text-sm font-semibold text-blue-300">
-                {founder.badge}
-              </span>
+              {/* Floating tech panel */}
+              <div className="absolute -right-5 top-10 hidden w-[230px] rounded-2xl border border-white/10 bg-[#07101f]/95 p-4 shadow-2xl shadow-black/40 backdrop-blur-xl sm:block">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-500/10 text-blue-300">
+                    <Code2 className="h-4 w-4" />
+                  </div>
 
-              <h2 className="mt-5 text-3xl font-black tracking-tight text-white md:text-5xl">
-                {founder.title}
-              </h2>
+                  <div>
+                    <div className="text-[9px] uppercase tracking-[0.2em] text-slate-600">
+                      Core Stack
+                    </div>
 
-              <p className="mt-4 text-lg font-semibold text-blue-200">
-                {founder.subtitle}
-              </p>
+                    <div className="mt-1 text-xs font-semibold text-white">
+                      Engineering Focus
+                    </div>
+                  </div>
+                </div>
 
-              <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {founder.skills.slice(0, 5).map((skill) => (
+                    <span key={skill} className="text-[11px] text-slate-400">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 28 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.65, delay: 0.05 }}
+          >
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-4">
+                <span className="text-xs font-semibold text-blue-300">01</span>
+
+                <div className="h-px w-10 bg-white/15" />
+
+                <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-slate-600">
+                  The Approach
+                </span>
+              </div>
+
+              <p className="mt-8 text-xl leading-9 tracking-[-0.02em] text-slate-200 md:text-2xl md:leading-10">
                 {founder.description}
               </p>
 
-              <p className="mt-4 max-w-2xl text-base leading-8 text-slate-400 md:text-lg">
+              <p className="mt-7 text-base leading-8 text-slate-400">
                 {founder.description2}
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              {/* Stats */}
+              <div className="mt-10 border-y border-white/[0.07]">
                 {founder.stats.map((item, index) => {
                   const Icon =
                     index === 0 ? Briefcase : index === 1 ? Globe2 : Code2;
@@ -104,40 +164,120 @@ export default function FounderSection({ founder }: FounderSectionProps) {
                   return (
                     <div
                       key={item.label}
-                      className="rounded-2xl border border-white/10 bg-white/[0.045] p-4 backdrop-blur-sm"
+                      className={`grid grid-cols-[auto_1fr_auto] items-center gap-5 py-6 ${
+                        index !== founder.stats.length - 1
+                          ? "border-b border-white/[0.07]"
+                          : ""
+                      }`}
                     >
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10 text-blue-300">
-                        <Icon size={18} />
+                      <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/[0.08] bg-white/[0.025] text-blue-300">
+                        <Icon className="h-4 w-4" />
                       </div>
-                      <p className="text-2xl font-bold text-white">
+
+                      <div className="text-sm text-slate-400">{item.label}</div>
+
+                      <div className="text-2xl font-semibold tracking-[-0.03em] text-white">
                         {item.value}
-                      </p>
-                      <p className="mt-1 text-sm text-slate-400">
-                        {item.label}
-                      </p>
+                      </div>
                     </div>
                   );
                 })}
               </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              {/* Skills */}
+              {founder.skills.length > 0 && (
+                <div className="mt-9">
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.24em] text-slate-600">
+                    Technical Focus
+                  </div>
+
+                  <div className="mt-5 flex flex-wrap gap-x-8 gap-y-4">
+                    {founder.skills.map((skill, index) => (
+                      <div
+                        key={skill}
+                        className="flex items-center gap-2 text-sm text-slate-300"
+                      >
+                        <span className="text-xs text-blue-300">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* CTA */}
+              <div className="mt-10 flex flex-wrap gap-5">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-blue-50"
+                  className="group inline-flex items-center gap-3 text-sm font-semibold text-white"
                 >
                   {founder.ctaPrimary}
-                  <ArrowRight size={16} />
+
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 transition group-hover:border-blue-300/30 group-hover:bg-blue-500/10">
+                    <ArrowUpRight className="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </span>
                 </a>
 
                 <a
                   href="#work"
-                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.05] px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                  className="inline-flex items-center text-sm font-semibold text-slate-500 transition hover:text-white"
                 >
                   {founder.ctaSecondary}
                 </a>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Philosophy strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-28 grid gap-8 border-y border-white/[0.07] py-10 md:grid-cols-3"
+        >
+          {[
+            {
+              number: "01",
+              title: "Build around the operation",
+              text: "Software should fit real business workflows instead of forcing teams into unnecessary complexity.",
+            },
+            {
+              number: "02",
+              title: "Think beyond launch",
+              text: "Architecture, maintainability and long-term operation matter as much as the first release.",
+            },
+            {
+              number: "03",
+              title: "Stay technically involved",
+              text: "Strategy and engineering stay connected so decisions remain grounded in what can actually be built.",
+            },
+          ].map((item, index) => (
+            <div
+              key={item.number}
+              className={`relative ${
+                index !== 2
+                  ? "border-b border-white/[0.07] pb-8 md:border-b-0 md:border-r md:pb-0 md:pr-8"
+                  : ""
+              } ${index !== 0 ? "md:pl-8" : ""}`}
+            >
+              <div className="text-xs font-semibold text-blue-300">
+                {item.number}
+              </div>
+
+              <div className="mt-4 text-lg font-semibold text-white">
+                {item.title}
+              </div>
+
+              <p className="mt-3 max-w-sm text-sm leading-7 text-slate-500">
+                {item.text}
+              </p>
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>

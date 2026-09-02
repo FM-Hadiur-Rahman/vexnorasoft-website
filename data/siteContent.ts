@@ -1,295 +1,475 @@
 import type { Lang, SiteContent } from "@/types/site";
 
 export const siteContent: Record<Lang, SiteContent> = {
+  // ============================================================
+  // ENGLISH
+  // ============================================================
+
   en: {
     nav: {
       services: "Services",
       work: "Work",
-      pricing: "Pricing",
-      testimonials: "Testimonials",
+      pricing: "Engagement",
+      testimonials: "How We Work",
       contact: "Contact",
       cta: "Book a Consultation",
     },
 
+    // ============================================================
+    // HERO
+    // ============================================================
+
     hero: {
-      badge: "Premium software partner for modern businesses",
+      badge: "Software engineering for modern businesses",
+
       title1: "We design and build",
-      title2: "premium digital products",
-      title3: "that help businesses grow.",
-      desc: "VexnoraSoft creates modern web applications, mobile apps, SaaS platforms, AI systems, and custom business software with a strong focus on scalability, security, and real operational needs.",
+      title2: "powerful digital products",
+      title3: "for real business operations.",
+
+      desc: "VexnoraSoft engineers modern web applications, mobile products, SaaS platforms, AI systems and custom business software — combining strong architecture, thoughtful user experience and practical operational understanding.",
+
       primary: "Start Your Project",
       secondary: "Explore Services",
+
       chips: [
-        "Web & Mobile Apps",
+        "Web & Mobile Products",
         "Business Automation",
-        "AI & Smart Solutions",
+        "AI & Intelligent Systems",
       ],
     },
 
     feature: {
-      eyebrow: "Core Capability",
-      title: "From idea to complete digital product",
+      eyebrow: "Engineering Capability",
+
+      title: "Connected digital systems from idea to operation",
+
       live: "Active",
+
       items: [
         [
           "Discovery & Strategy",
-          "We define business goals, user journeys, requirements, and the technical roadmap.",
+          "We understand the business problem, users, workflows, requirements and measurable goals before defining the technical direction.",
         ],
+
         [
-          "UI/UX & Frontend",
-          "We create modern, intuitive, and user-focused digital experiences.",
+          "Experience & Engineering",
+          "We turn requirements into intuitive interfaces, maintainable software and scalable product architecture.",
         ],
+
         [
-          "Backend & Integrations",
-          "Scalable APIs, authentication, payments, dashboards, automation, and third-party integrations.",
+          "Systems & Integrations",
+          "APIs, authentication, payments, databases, automation and external systems are connected into one reliable platform.",
         ],
+
         [
-          "Deployment & Scaling",
-          "Production deployment, optimization, infrastructure, monitoring, and future-ready scaling.",
+          "Deploy & Operate",
+          "We prepare products for production, infrastructure, monitoring, optimization and continuous future development.",
         ],
       ],
     },
 
+    // ============================================================
+    // TRUST / POSITIONING
+    // ============================================================
+
     trust: [
-      ["Engineering Quality", "Fast, secure, scalable"],
-      ["Modern Technology", "React, Next.js, Node.js"],
-      ["Business Focused", "Built for real operations"],
-      ["Flexible Delivery", "From MVP to full platform"],
+      [
+        "Engineering Quality",
+        "Reliable architecture and maintainable software",
+      ],
+
+      ["Modern Technology", "Current web, cloud and application engineering"],
+
+      ["Operational Thinking", "Designed around real business workflows"],
+
+      [
+        "Flexible Delivery",
+        "From focused product builds to long-term development",
+      ],
     ],
 
+    // ============================================================
+    // SERVICES
+    // ============================================================
+
     services: {
-      eyebrow: "Services",
-      title: "Modern software solutions for real business requirements.",
-      desc: "We help businesses and organizations build custom software, SaaS platforms, web and mobile applications, AI systems, and automation solutions designed for long-term growth.",
+      eyebrow: "Engineering Capabilities",
+
+      title: "Software engineered around how your business actually works.",
+
+      desc: "From customer-facing digital products to the systems behind daily operations, we design and engineer technology that solves real problems, integrates with existing workflows and can evolve with the business.",
+
       items: [
         {
           title: "Custom Software Development",
-          desc: "Business applications, operational platforms, dashboards, portals, and custom systems designed around your specific processes and requirements.",
+
+          desc: "Operational platforms, business applications, administration systems, portals, dashboards and custom digital tools engineered around your workflows and requirements.",
         },
+
         {
           title: "SaaS & Platform Engineering",
-          desc: "Multi-tenant SaaS products, subscription systems, marketplaces, digital platforms, administration tools, and scalable cloud-based architectures.",
+
+          desc: "Multi-tenant SaaS products, marketplaces, subscription platforms, business ecosystems and scalable cloud-based systems designed for long-term product growth.",
         },
+
         {
-          title: "Mobile App Development",
-          desc: "Modern applications for iOS and Android with polished UX, APIs, authentication, payments, notifications, and real-time functionality.",
+          title: "Web & Mobile Products",
+
+          desc: "Modern customer and employee experiences across web, iOS and Android with authentication, APIs, payments, notifications, real-time functionality and polished interfaces.",
         },
+
         {
-          title: "AI & Automation",
-          desc: "AI-powered systems, intelligent automation, computer vision, workflow optimization, analytics, and practical business applications of AI.",
+          title: "AI & Intelligent Automation",
+
+          desc: "Practical AI systems, computer vision, workflow automation, intelligent processing, analytics and AI-assisted business operations connected to real software products.",
         },
       ],
     },
+
+    // ============================================================
+    // WORK
+    // ============================================================
 
     work: {
       eyebrow: "Selected Work",
-      title: "Real software products built for real business operations.",
-      desc: "Our work spans SaaS platforms, AI systems, restaurant technology, marketplaces, mobile applications, and business operations software.",
+
+      title: "Digital products built around real operational challenges.",
+
+      desc: "Our engineering work spans SaaS products, artificial intelligence, hospitality technology, marketplaces, mobile experiences and operational business systems.",
+
       items: [
         {
           name: "Reivio Web & Mobile App",
-          type: "Travel & Booking Platform",
+
+          type: "Travel & Marketplace Platform",
+
           summary:
-            "A modern digital platform designed to connect stays, travel, mobility, bookings, and scalable marketplace operations.",
+            "A digital travel ecosystem designed to connect stays, bookings, mobility and marketplace operations within one scalable platform.",
         },
+
         {
           name: "ZonoVision AI Theft Detection",
-          type: "AI Security Solution",
+
+          type: "AI & Computer Vision",
+
           summary:
-            "An AI-powered retail security system using computer vision, real-time video analysis, intelligent detection, and operational alerts.",
+            "An intelligent monitoring solution using computer vision and real-time processing to support operational retail security workflows.",
         },
+
         {
           name: "Mr. Baker Mobile App",
-          type: "Food & Commerce App",
+
+          type: "Food & Digital Commerce",
+
           summary:
-            "A mobile ordering experience for bakery and food operations with product browsing, customer ordering, and digital commerce functionality.",
+            "A customer-focused mobile ordering experience supporting product discovery, digital ordering and connected food-service operations.",
         },
+
         {
           name: "Time Track Work Management App",
-          type: "Work Management Platform",
+
+          type: "Workforce Operations",
+
           summary:
-            "A digital platform for managing working hours, productivity, teams, operational records, and reporting.",
+            "A digital operations platform for working hours, team activity, records, productivity workflows and management reporting.",
         },
+
         {
           name: "SPAR Online Grocery App",
-          type: "E-Commerce Platform",
+
+          type: "Digital Grocery Commerce",
+
           summary:
-            "A grocery commerce solution supporting digital product discovery, cart management, ordering, and local delivery operations.",
+            "An online grocery experience supporting digital product discovery, basket management, ordering and local commerce workflows.",
         },
+
         {
           name: "Pizza Casa Online Ordering App",
-          type: "Restaurant Ordering System",
+
+          type: "Restaurant Ordering",
+
           summary:
-            "A restaurant ordering platform with digital menus, online checkout, customer ordering, and streamlined order management.",
+            "A restaurant ordering experience connecting digital menus, checkout, customer ordering and operational order workflows.",
         },
       ],
-      ready: "Available for custom business adaptation",
+
+      ready: "Adaptable to individual business requirements",
     },
+
+    // ============================================================
+    // ENGAGEMENT
+    // ============================================================
 
     pricing: {
       eyebrow: "Engagement Models",
-      title: "Flexible ways to build and operate software with us.",
-      desc: "The right engagement model depends on project scope, technical complexity, integrations, delivery requirements, and long-term product goals.",
+
+      title: "Different ways to build serious software together.",
+
+      desc: "The right collaboration model depends on the problem, product maturity, technical complexity, internal capabilities and how much continuous engineering support is required.",
+
       plans: [
         {
           name: "Project Delivery",
-          price: "Scope-based",
-          subtitle: "For defined software projects",
+
+          price: "Custom Scope",
+
+          subtitle: "For defined software initiatives",
+
           features: [
-            "Discovery & planning",
+            "Business & technical discovery",
+            "Product and architecture definition",
             "UI/UX & software engineering",
-            "API & system integrations",
-            "Production deployment",
-            "Handover & support",
+            "Systems and API integration",
+            "Deployment and handover",
           ],
+
           cta: "Discuss Your Project",
         },
+
         {
           name: "Dedicated Development Team",
-          price: "Monthly",
-          subtitle: "For continuous product development",
+
+          price: "Custom Monthly",
+
+          subtitle: "For continuous product engineering",
+
           features: [
             "Dedicated engineering capacity",
-            "Continuous delivery",
-            "Product development",
-            "Cloud & DevOps support",
-            "Long-term improvement",
+            "Continuous product delivery",
+            "Frontend & backend engineering",
+            "Cloud and infrastructure support",
+            "Long-term technical development",
           ],
+
           cta: "Discuss Your Team",
+
           featured: true,
         },
+
         {
           name: "SaaS & Platform",
-          price: "Custom Plan",
-          subtitle: "For software platforms and SaaS products",
+
+          price: "Custom Model",
+
+          subtitle: "For platform-based business solutions",
+
           features: [
             "Cloud-based platform",
-            "Subscription model",
-            "Continuous updates",
+            "Product configuration",
+            "Integrations and workflows",
+            "Continuous improvements",
             "Technical support",
-            "Scalable infrastructure",
           ],
+
           cta: "Explore Solutions",
         },
       ],
     },
 
+    // ============================================================
+    // HOW WE WORK
+    // ============================================================
+
     testimonials: {
       eyebrow: "How We Work",
+
       title:
-        "A structured engineering process from business discovery to long-term operation.",
+        "A clear engineering process from understanding the problem to operating the product.",
+
       items: [
         {
-          quote:
-            "We begin by understanding the business problem, users, operational requirements, and measurable objectives.",
           name: "Discover",
+
           role: "Business & Product Discovery",
-        },
-        {
+
           quote:
-            "We design scalable architecture and build reliable software with strong user experience and maintainable engineering.",
-          name: "Build",
-          role: "Design & Engineering",
+            "We begin by understanding the business problem, users, workflows, constraints and measurable outcomes before making technology decisions.",
         },
+
         {
+          name: "Design & Build",
+
+          role: "Architecture, Experience & Engineering",
+
           quote:
-            "After launch, we support optimization, monitoring, infrastructure, improvements, and future product development.",
-          name: "Operate",
-          role: "Launch & Continuous Improvement",
+            "We translate the requirements into product architecture, user experience and maintainable software through an iterative engineering process.",
+        },
+
+        {
+          name: "Launch & Operate",
+
+          role: "Deployment & Continuous Improvement",
+
+          quote:
+            "After production launch, the focus shifts to reliability, monitoring, optimization, infrastructure and future product development.",
         },
       ],
     },
 
+    // ============================================================
+    // WHY VEXNORASOFT
+    // ============================================================
+
     about: {
       eyebrow: "Why VexnoraSoft",
-      title:
-        "A strong connection between modern technology and practical business needs.",
-      desc: "We do more than write code. We build software that improves operations, supports growth, and creates long-term business value.",
+
+      title: "Technology decisions grounded in real business operations.",
+
+      desc: "The goal is not simply to ship features. We connect business understanding, product thinking and engineering so the software remains useful, maintainable and valuable after launch.",
+
       points: [
-        "Germany-based business presence",
-        "Full-stack software engineering",
-        "SaaS & platform development",
-        "AI & automation capabilities",
-        "Cloud & DevOps experience",
+        "Business-oriented software engineering",
+
+        "Full-stack product development",
+
+        "SaaS & platform architecture",
+
+        "AI & automation capability",
+
+        "Cloud & system integration experience",
+
         "Long-term product thinking",
       ],
     },
 
     banner: {
-      eyebrow: "Ready to build?",
-      title: "Turn your idea into a powerful digital product.",
-      desc: "Whether you need custom business software, a SaaS platform, an AI system, a mobile application, or process automation, we can help define and build the right solution.",
+      eyebrow: "Have a project in mind?",
+
+      title: "Turn a business challenge into a working digital system.",
+
+      desc: "Whether the requirement is custom software, a SaaS product, an AI-enabled system, a mobile application or operational automation, we can help structure the problem and engineer the appropriate solution.",
+
       cta: "Start a Conversation",
     },
 
+    // ============================================================
+    // CONTACT
+    // ============================================================
+
     contact: {
-      eyebrow: "Contact",
-      title: "Start your next project with VexnoraSoft.",
-      desc: "Talk to us about your software platform, app, SaaS product, AI system, integration, or automation requirements.",
+      eyebrow: "Start a Conversation",
+
+      title: "Tell us what you want to build, improve or automate.",
+
+      desc: "Share your business challenge, product idea or operational requirement. A complete technical specification is not necessary — understanding the problem is enough to start the conversation.",
+
       labels: {
         email: "Email",
+
         website: "Website",
+
         location: "Location",
-        name: "Your name",
-        emailInput: "Your email",
-        company: "Company name",
-        service: "Service needed",
-        message: "Tell us about your project",
+
+        name: "Your Name",
+
+        emailInput: "Your Email",
+
+        company: "Company",
+
+        service: "Area of Interest",
+
+        message: "Tell us about the project",
+
         submit: "Send Inquiry",
+
         success: "Your message has been sent successfully.",
+
         sending: "Sending...",
       },
+
       services: [
-        "Custom Software",
+        "Custom Software Development",
+        "SaaS & Platform Engineering",
         "Web Application",
-        "Mobile App",
-        "SaaS Platform",
-        "Automation",
-        "AI Solution",
+        "Mobile Application",
+        "AI & Automation",
+        "System Integration",
       ],
     },
 
+    // ============================================================
+    // FOUNDER
+    // ============================================================
+
     founder: {
-      badge: "Founder",
+      badge: "Founder & Engineering",
+
       title: "F M Hadiur Rahman",
+
       subtitle: "Founder & Software Engineer",
+
       description:
-        "Focused on turning business ideas into scalable digital products, SaaS platforms, operational systems, and modern software applications.",
+        "Focused on transforming business requirements into scalable digital products, SaaS platforms, connected operational systems and modern software applications.",
+
       description2:
-        "The focus is on strong software architecture, practical user experience, reliable engineering, and measurable long-term business value.",
+        "The approach combines software architecture, product thinking, practical user experience and hands-on engineering with an emphasis on systems that remain useful and maintainable over time.",
+
       stats: [
-        { label: "Focus", value: "Software & SaaS" },
-        { label: "Market", value: "Germany + Global" },
-        { label: "Engineering", value: "Full Stack" },
+        {
+          label: "Focus",
+          value: "Software & SaaS",
+        },
+
+        {
+          label: "Market",
+          value: "Germany + Global",
+        },
+
+        {
+          label: "Engineering",
+          value: "Full Stack",
+        },
       ],
+
       skills: ["Next.js", "React", "Node.js", "TypeScript", "MongoDB", "AWS"],
+
       ctaPrimary: "Start a Conversation",
-      ctaSecondary: "View Our Work",
+
+      ctaSecondary: "Explore Our Work",
+
       image: "/images/founder.jpg",
     },
 
+    // ============================================================
+    // TEAM
+    // ============================================================
+
     team: {
       badge: "Our Team",
-      title: "The people behind VexnoraSoft",
-      desc: "Our team combines software engineering, AI capability, modern product development, and practical business thinking to build reliable digital solutions.",
+
+      title: "Engineering, AI and product thinking under one roof.",
+
+      desc: "VexnoraSoft brings together software engineering and artificial intelligence expertise to build practical digital products and operational systems.",
+
       ctaPrimary: "Talk to Our Team",
-      ctaSecondary: "View Our Work",
+
+      ctaSecondary: "Explore Our Work",
+
       members: [
         {
           name: "F M Hadiur Rahman",
+
           role: "Founder & Full Stack Developer",
-          bio: "Focused on scalable SaaS platforms, business software, web applications, system integrations, cloud infrastructure, and modern digital products.",
+
+          bio: "Focused on SaaS platforms, business software, web applications, integrations, cloud infrastructure and end-to-end digital product engineering.",
+
           image: "/images/hadiur.jpg",
+
           tags: ["Next.js", "React", "Node.js", "TypeScript", "MongoDB", "AWS"],
         },
+
         {
           name: "Nihal Nallari",
+
           role: "Founder & AI Engineer",
-          bio: "Focused on AI systems, machine learning, computer vision, intelligent automation, and practical AI applications for business.",
+
+          bio: "Focused on machine learning, computer vision, intelligent automation and practical AI systems designed to solve operational business problems.",
+
           image: "/images/nihal.jpg",
+
           tags: [
             "AI Systems",
-            "ML",
+            "Machine Learning",
             "Automation",
             "Python",
             "LLMs",
@@ -299,11 +479,20 @@ export const siteContent: Record<Lang, SiteContent> = {
       ],
     },
 
+    // ============================================================
+    // FOOTER
+    // ============================================================
+
     footer: {
-      left: "© 2026 VexnoraSoft. All rights reserved.",
-      right: "Powered by VexnoraSoft",
+      left: "Software, SaaS, AI and digital systems engineered around real business operations.",
+
+      right: "Designed in Germany. Built for global digital business.",
     },
   },
+
+  // ============================================================
+  // GERMAN
+  // ============================================================
 
   de: {
     nav: {
@@ -315,286 +504,467 @@ export const siteContent: Record<Lang, SiteContent> = {
       cta: "Beratung anfragen",
     },
 
+    // ============================================================
+    // HERO
+    // ============================================================
+
     hero: {
-      badge: "Softwarepartner für moderne Unternehmen",
+      badge: "Software Engineering für moderne Unternehmen",
+
       title1: "Wir entwickeln",
       title2: "leistungsstarke digitale Produkte",
       title3: "für reale Geschäftsprozesse.",
-      desc: "VexnoraSoft entwickelt moderne Webanwendungen, mobile Apps, SaaS-Plattformen, KI-Systeme und individuelle Business-Software – mit Fokus auf Skalierbarkeit, Sicherheit und reale betriebliche Anforderungen.",
+
+      desc: "VexnoraSoft entwickelt moderne Webanwendungen, mobile Produkte, SaaS-Plattformen, KI-Systeme und individuelle Business-Software – mit durchdachter Architektur, guter Nutzererfahrung und einem klaren Verständnis realer betrieblicher Anforderungen.",
+
       primary: "Projekt starten",
+
       secondary: "Leistungen ansehen",
+
       chips: [
-        "Web & Mobile Apps",
+        "Web- & Mobile-Produkte",
         "Business-Automation",
-        "KI & Smart Solutions",
+        "KI & intelligente Systeme",
       ],
     },
 
     feature: {
-      eyebrow: "Kernkompetenz",
-      title: "Von der Idee zum vollständigen digitalen Produkt",
+      eyebrow: "Engineering-Kompetenz",
+
+      title: "Vernetzte digitale Systeme von der Idee bis zum Betrieb",
+
       live: "Aktiv",
+
       items: [
         [
           "Analyse & Strategie",
-          "Wir definieren Geschäftsziele, Anforderungen, Nutzerwege und die technische Roadmap.",
+          "Wir verstehen Geschäftsproblem, Nutzer, Abläufe, Anforderungen und messbare Ziele, bevor die technische Richtung definiert wird.",
         ],
+
         [
-          "UI/UX & Frontend",
-          "Wir entwickeln moderne, intuitive und nutzerorientierte digitale Oberflächen.",
+          "Experience & Engineering",
+          "Anforderungen werden in intuitive Oberflächen, wartbare Software und eine skalierbare Produktarchitektur übersetzt.",
         ],
+
         [
-          "Backend & Integrationen",
-          "Skalierbare APIs, Authentifizierung, Zahlungen, Dashboards, Automatisierungen und Systemintegrationen.",
+          "Systeme & Integrationen",
+          "APIs, Authentifizierung, Zahlungen, Datenbanken, Automatisierungen und externe Systeme werden zuverlässig miteinander verbunden.",
         ],
+
         [
-          "Deployment & Skalierung",
-          "Produktivsetzung, Optimierung, Infrastruktur, Monitoring und skalierbare Weiterentwicklung.",
+          "Deployment & Betrieb",
+          "Wir bereiten Produkte auf Produktivbetrieb, Infrastruktur, Monitoring, Optimierung und kontinuierliche Weiterentwicklung vor.",
         ],
       ],
     },
 
+    // ============================================================
+    // TRUST
+    // ============================================================
+
     trust: [
-      ["Engineering-Qualität", "Schnell, sicher, skalierbar"],
-      ["Moderne Technologien", "React, Next.js, Node.js"],
-      ["Business-orientiert", "Für reale Abläufe entwickelt"],
-      ["Flexible Umsetzung", "Vom MVP bis zur Plattform"],
+      [
+        "Engineering-Qualität",
+        "Zuverlässige Architektur und wartbare Software",
+      ],
+
+      [
+        "Moderne Technologien",
+        "Aktuelles Web-, Cloud- und Application Engineering",
+      ],
+
+      ["Operatives Verständnis", "Für reale Geschäftsabläufe entwickelt"],
+
+      [
+        "Flexible Zusammenarbeit",
+        "Vom fokussierten Projekt bis zur langfristigen Entwicklung",
+      ],
     ],
 
+    // ============================================================
+    // SERVICES
+    // ============================================================
+
     services: {
-      eyebrow: "Leistungen",
-      title: "Moderne Softwarelösungen für reale Geschäftsanforderungen.",
-      desc: "Wir unterstützen Unternehmen und Organisationen bei der Entwicklung individueller Software, SaaS-Plattformen, Web- und Mobile-Anwendungen sowie KI- und Automatisierungslösungen.",
+      eyebrow: "Engineering-Kompetenzen",
+
+      title: "Software, die sich an Ihren realen Geschäftsabläufen orientiert.",
+
+      desc: "Von digitalen Kundenerlebnissen bis zu den Systemen hinter dem täglichen Betrieb entwickeln wir Technologie, die konkrete Probleme löst, bestehende Abläufe integriert und langfristig mit dem Unternehmen wachsen kann.",
+
       items: [
         {
           title: "Individuelle Softwareentwicklung",
-          desc: "Business-Anwendungen, operative Plattformen, Dashboards, Portale und individuelle Systeme, die exakt auf Prozesse und Anforderungen abgestimmt sind.",
+
+          desc: "Operative Plattformen, Business-Anwendungen, Administrationssysteme, Portale, Dashboards und individuelle digitale Werkzeuge für konkrete Prozesse und Anforderungen.",
         },
+
         {
           title: "SaaS & Plattform Engineering",
-          desc: "Multi-Tenant-SaaS, Abonnement-Systeme, Marktplätze, digitale Plattformen, Administration und skalierbare Cloud-Architekturen.",
+
+          desc: "Multi-Tenant-SaaS-Produkte, Marktplätze, Abonnement-Plattformen und skalierbare Cloud-Systeme für langfristige digitale Geschäftsmodelle.",
         },
+
         {
-          title: "Mobile App Entwicklung",
-          desc: "Moderne Anwendungen für iOS und Android mit hochwertigem UX, APIs, Authentifizierung, Zahlungen, Benachrichtigungen und Echtzeitfunktionen.",
+          title: "Web- & Mobile-Produkte",
+
+          desc: "Moderne Anwendungen für Web, iOS und Android mit Authentifizierung, APIs, Zahlungen, Benachrichtigungen, Echtzeitfunktionen und hochwertiger Nutzererfahrung.",
         },
+
         {
-          title: "KI & Automatisierung",
-          desc: "KI-Systeme, intelligente Automatisierung, Computer Vision, optimierte Workflows, Datenanalyse und praktische KI-Anwendungen für Unternehmen.",
+          title: "KI & intelligente Automatisierung",
+
+          desc: "Praktische KI-Systeme, Computer Vision, intelligente Prozessautomatisierung, Datenverarbeitung und KI-gestützte Funktionen als Bestandteil realer Softwareprodukte.",
         },
       ],
     },
+
+    // ============================================================
+    // WORK
+    // ============================================================
 
     work: {
       eyebrow: "Ausgewählte Projekte",
-      title: "Reale Softwareprodukte für reale Geschäftsprozesse.",
-      desc: "Unsere Arbeit umfasst SaaS-Plattformen, KI-Systeme, Restaurant-Technologie, Marktplätze, mobile Anwendungen und operative Business-Software.",
+
+      title: "Digitale Produkte für reale operative Herausforderungen.",
+
+      desc: "Unsere Engineering-Arbeit umfasst SaaS-Produkte, künstliche Intelligenz, Hospitality-Technologie, Marktplätze, mobile Anwendungen und operative Business-Systeme.",
+
       items: [
         {
           name: "Reivio Web- & Mobile-App",
-          type: "Reise- & Buchungsplattform",
+
+          type: "Travel- & Marketplace-Plattform",
+
           summary:
-            "Eine moderne digitale Plattform zur Verbindung von Unterkünften, Reisen, Mobilität, Buchungen und skalierbaren Marktplatzprozessen.",
+            "Ein digitales Reise-Ökosystem, das Unterkünfte, Buchungen, Mobilität und Marketplace-Prozesse innerhalb einer skalierbaren Plattform verbindet.",
         },
+
         {
-          name: "ZonoVision KI-Diebstahlerkennung",
-          type: "KI-Sicherheitslösung",
+          name: "ZonoVision AI Theft Detection",
+
+          type: "KI & Computer Vision",
+
           summary:
-            "Ein KI-basiertes Sicherheitssystem für den Einzelhandel mit Computer Vision, Echtzeit-Videoanalyse, intelligenter Erkennung und operativen Alarmen.",
+            "Eine intelligente Monitoring-Lösung mit Computer Vision und Echtzeitverarbeitung zur Unterstützung operativer Sicherheitsprozesse im Einzelhandel.",
         },
+
         {
           name: "Mr. Baker Mobile App",
-          type: "Food & Commerce App",
+
+          type: "Food & Digital Commerce",
+
           summary:
-            "Eine mobile Bestelllösung für Bäckerei- und Food-Betriebe mit Produktauswahl, Kundenbestellungen und digitaler Commerce-Funktionalität.",
+            "Eine mobile Bestelllösung für Produktauswahl, digitale Bestellungen und vernetzte Abläufe im Food-Service.",
         },
+
         {
           name: "Time Track Work Management App",
-          type: "Arbeitsmanagement-Plattform",
+
+          type: "Workforce Operations",
+
           summary:
-            "Eine digitale Plattform zur Verwaltung von Arbeitszeiten, Produktivität, Teams, operativen Daten und Reporting.",
+            "Eine digitale Plattform zur Verwaltung von Arbeitszeiten, Teamaktivitäten, operativen Daten, Produktivitätsprozessen und Reporting.",
         },
+
         {
           name: "SPAR Online Grocery App",
-          type: "E-Commerce-Plattform",
+
+          type: "Digital Grocery Commerce",
+
           summary:
-            "Eine digitale Grocery-Lösung für Produktsuche, Warenkorb, Bestellungen und lokale Lieferprozesse.",
+            "Eine digitale Grocery-Lösung für Produktsuche, Warenkorb, Bestellungen und lokale Commerce- und Lieferprozesse.",
         },
+
         {
           name: "Pizza Casa Online Ordering App",
-          type: "Restaurant-Bestellsystem",
+
+          type: "Restaurant Ordering",
+
           summary:
-            "Eine Restaurant-Plattform mit digitaler Speisekarte, Online-Checkout, Kundenbestellung und effizienter Auftragsverwaltung.",
+            "Eine Restaurant-Lösung, die digitale Speisekarte, Checkout, Kundenbestellungen und operative Auftragsprozesse miteinander verbindet.",
         },
       ],
-      ready: "Individuell für Ihr Unternehmen anpassbar",
+
+      ready: "Individuell an Geschäftsanforderungen anpassbar",
     },
+
+    // ============================================================
+    // ENGAGEMENT
+    // ============================================================
 
     pricing: {
       eyebrow: "Zusammenarbeitsmodelle",
-      title: "Flexible Modelle für Entwicklung und langfristigen Betrieb.",
-      desc: "Das passende Modell richtet sich nach Projektumfang, technischer Komplexität, Integrationen, Lieferanforderungen und langfristigen Produktzielen.",
+
+      title: "Flexible Wege, gemeinsam anspruchsvolle Software zu entwickeln.",
+
+      desc: "Das passende Modell hängt von Geschäftsproblem, Produktreife, technischer Komplexität, internen Ressourcen und dem langfristig benötigten Engineering-Support ab.",
+
       plans: [
         {
           name: "Project Delivery",
-          price: "Nach Umfang",
-          subtitle: "Für klar definierte Softwareprojekte",
+
+          price: "Individueller Umfang",
+
+          subtitle: "Für definierte Softwareprojekte",
+
           features: [
-            "Analyse & Planung",
-            "UI/UX & Softwareentwicklung",
-            "API- & Systemintegrationen",
-            "Produktiv-Deployment",
-            "Übergabe & Support",
+            "Business- & technische Analyse",
+            "Produkt- und Architekturkonzept",
+            "UI/UX & Software Engineering",
+            "System- und API-Integrationen",
+            "Deployment & Übergabe",
           ],
+
           cta: "Projekt besprechen",
         },
+
         {
           name: "Dedicated Development Team",
-          price: "Monatlich",
+
+          price: "Individuell monatlich",
+
           subtitle: "Für kontinuierliche Produktentwicklung",
+
           features: [
             "Dedizierte Engineering-Kapazität",
-            "Kontinuierliche Lieferung",
-            "Produktentwicklung",
-            "Cloud- & DevOps-Support",
-            "Langfristige Weiterentwicklung",
+            "Kontinuierliche Produktentwicklung",
+            "Frontend- & Backend-Engineering",
+            "Cloud- & Infrastruktur-Support",
+            "Langfristige technische Weiterentwicklung",
           ],
+
           cta: "Team besprechen",
+
           featured: true,
         },
+
         {
           name: "SaaS & Platform",
+
           price: "Individuelles Modell",
-          subtitle: "Für Plattformen und SaaS-Produkte",
+
+          subtitle: "Für plattformbasierte Business-Lösungen",
+
           features: [
             "Cloud-basierte Plattform",
-            "Abonnement-Modell",
-            "Kontinuierliche Updates",
+            "Produktkonfiguration",
+            "Integrationen & Workflows",
+            "Kontinuierliche Weiterentwicklung",
             "Technischer Support",
-            "Skalierbare Infrastruktur",
           ],
+
           cta: "Lösungen ansehen",
         },
       ],
     },
 
+    // ============================================================
+    // PROCESS
+    // ============================================================
+
     testimonials: {
       eyebrow: "Unsere Arbeitsweise",
+
       title:
-        "Ein strukturierter Engineering-Prozess von der Analyse bis zum langfristigen Betrieb.",
+        "Ein klarer Engineering-Prozess vom Verständnis des Problems bis zum langfristigen Betrieb.",
+
       items: [
         {
+          name: "Verstehen",
+
+          role: "Business- & Product Discovery",
+
           quote:
-            "Wir beginnen mit einem klaren Verständnis des Geschäftsproblems, der Nutzer, der betrieblichen Anforderungen und der messbaren Ziele.",
-          name: "Discover",
-          role: "Business & Product Discovery",
+            "Wir beginnen mit einem klaren Verständnis von Geschäftsproblem, Nutzern, Abläufen, Rahmenbedingungen und messbaren Ergebnissen.",
         },
+
         {
+          name: "Design & Entwicklung",
+
+          role: "Architektur, Experience & Engineering",
+
           quote:
-            "Wir entwickeln skalierbare Architekturen und zuverlässige Software mit hochwertiger Nutzererfahrung und wartbarer technischer Basis.",
-          name: "Build",
-          role: "Design & Engineering",
+            "Die Anforderungen werden in Produktarchitektur, Nutzererlebnis und wartbare Software innerhalb eines iterativen Engineering-Prozesses übersetzt.",
         },
+
         {
+          name: "Launch & Betrieb",
+
+          role: "Deployment & kontinuierliche Verbesserung",
+
           quote:
-            "Nach dem Launch unterstützen wir Optimierung, Monitoring, Infrastruktur, Weiterentwicklung und langfristige Produktverbesserung.",
-          name: "Operate",
-          role: "Launch & Continuous Improvement",
+            "Nach dem Produktivstart stehen Zuverlässigkeit, Monitoring, Optimierung, Infrastruktur und zukünftige Produktentwicklung im Mittelpunkt.",
         },
       ],
     },
 
+    // ============================================================
+    // WHY
+    // ============================================================
+
     about: {
       eyebrow: "Warum VexnoraSoft",
-      title:
-        "Eine starke Verbindung zwischen moderner Technologie und praktischen Geschäftsanforderungen.",
-      desc: "Wir schreiben nicht einfach nur Code. Wir entwickeln Software, die Abläufe verbessert, Wachstum ermöglicht und langfristigen Geschäftswert schafft.",
+
+      title: "Technologieentscheidungen auf Basis realer Geschäftsabläufe.",
+
+      desc: "Unser Ziel ist nicht einfach die Lieferung möglichst vieler Features. Wir verbinden Business-Verständnis, Produktdenken und Engineering, damit Software auch nach dem Launch langfristig nützlich, wartbar und wertvoll bleibt.",
+
       points: [
-        "Geschäftspräsenz in Deutschland",
-        "Full-Stack Software Engineering",
-        "SaaS- & Plattform-Entwicklung",
+        "Business-orientiertes Software Engineering",
+
+        "Full-Stack Produktentwicklung",
+
+        "SaaS- & Plattformarchitektur",
+
         "KI- & Automatisierungskompetenz",
-        "Cloud- & DevOps-Erfahrung",
+
+        "Cloud- & Integrationserfahrung",
+
         "Langfristiges Produktdenken",
       ],
     },
 
     banner: {
-      eyebrow: "Bereit für den nächsten Schritt?",
+      eyebrow: "Sie haben ein Projekt im Kopf?",
+
       title:
-        "Verwandeln Sie Ihre Idee in ein leistungsstarkes digitales Produkt.",
-      desc: "Ob individuelle Business-Software, SaaS-Plattform, KI-System, mobile Anwendung oder Prozessautomatisierung – wir helfen bei Konzeption und Umsetzung.",
+        "Verwandeln Sie eine geschäftliche Herausforderung in ein funktionierendes digitales System.",
+
+      desc: "Ob individuelle Software, SaaS-Produkt, KI-gestütztes System, mobile Anwendung oder operative Automatisierung – wir helfen dabei, das Problem klar zu strukturieren und die passende Lösung zu entwickeln.",
+
       cta: "Gespräch starten",
     },
 
+    // ============================================================
+    // CONTACT
+    // ============================================================
+
     contact: {
-      eyebrow: "Kontakt",
-      title: "Starten Sie Ihr nächstes Projekt mit VexnoraSoft.",
-      desc: "Sprechen Sie mit uns über Ihre Softwareplattform, App, Ihr SaaS-Produkt, KI-System, Integrationen oder Automatisierungsanforderungen.",
+      eyebrow: "Gespräch starten",
+
+      title:
+        "Erzählen Sie uns, was Sie entwickeln, verbessern oder automatisieren möchten.",
+
+      desc: "Beschreiben Sie Ihre geschäftliche Herausforderung, Produktidee oder operative Anforderung. Eine vollständige technische Spezifikation ist nicht erforderlich – das Problem zu verstehen reicht für den Anfang.",
+
       labels: {
         email: "E-Mail",
+
         website: "Website",
+
         location: "Standort",
+
         name: "Ihr Name",
+
         emailInput: "Ihre E-Mail",
+
         company: "Unternehmen",
-        service: "Gewünschte Leistung",
+
+        service: "Interessensbereich",
+
         message: "Beschreiben Sie Ihr Projekt",
+
         submit: "Anfrage senden",
+
         success: "Ihre Nachricht wurde erfolgreich gesendet.",
+
         sending: "Wird gesendet...",
       },
+
       services: [
-        "Individuelle Software",
+        "Individuelle Softwareentwicklung",
+        "SaaS & Plattform Engineering",
         "Web-Anwendung",
-        "Mobile App",
-        "SaaS-Plattform",
-        "Automatisierung",
-        "KI-Lösung",
+        "Mobile Anwendung",
+        "KI & Automatisierung",
+        "Systemintegration",
       ],
     },
 
+    // ============================================================
+    // FOUNDER
+    // ============================================================
+
     founder: {
-      badge: "Gründer",
+      badge: "Founder & Engineering",
+
       title: "F M Hadiur Rahman",
+
       subtitle: "Founder & Software Engineer",
+
       description:
-        "Der Fokus liegt darauf, Geschäftsideen in skalierbare digitale Produkte, SaaS-Plattformen, operative Systeme und moderne Softwareanwendungen zu verwandeln.",
+        "Der Fokus liegt darauf, Geschäftsanforderungen in skalierbare digitale Produkte, SaaS-Plattformen, vernetzte operative Systeme und moderne Softwareanwendungen zu übersetzen.",
+
       description2:
-        "Im Mittelpunkt stehen robuste Softwarearchitektur, praktische Nutzererfahrung, zuverlässiges Engineering und langfristiger Geschäftswert.",
+        "Der Ansatz verbindet Softwarearchitektur, Produktdenken, praxisorientierte Nutzererfahrung und aktives Engineering mit dem Ziel, Systeme zu entwickeln, die langfristig nutzbar und wartbar bleiben.",
+
       stats: [
-        { label: "Fokus", value: "Software & SaaS" },
-        { label: "Markt", value: "Deutschland + Global" },
-        { label: "Engineering", value: "Full Stack" },
+        {
+          label: "Fokus",
+          value: "Software & SaaS",
+        },
+
+        {
+          label: "Markt",
+          value: "Deutschland + Global",
+        },
+
+        {
+          label: "Engineering",
+          value: "Full Stack",
+        },
       ],
+
       skills: ["Next.js", "React", "Node.js", "TypeScript", "MongoDB", "AWS"],
+
       ctaPrimary: "Gespräch starten",
-      ctaSecondary: "Unsere Projekte ansehen",
+
+      ctaSecondary: "Projekte ansehen",
+
       image: "/images/founder.jpg",
     },
 
+    // ============================================================
+    // TEAM
+    // ============================================================
+
     team: {
       badge: "Unser Team",
-      title: "Die Menschen hinter VexnoraSoft",
-      desc: "Unser Team verbindet Software Engineering, KI-Kompetenz, moderne Produktentwicklung und praktisches Business-Denken, um zuverlässige digitale Lösungen zu entwickeln.",
+
+      title: "Software Engineering, KI und Produktdenken unter einem Dach.",
+
+      desc: "VexnoraSoft verbindet Software Engineering und künstliche Intelligenz, um praktische digitale Produkte und operative Systeme zu entwickeln.",
+
       ctaPrimary: "Mit unserem Team sprechen",
+
       ctaSecondary: "Unsere Projekte ansehen",
+
       members: [
         {
           name: "F M Hadiur Rahman",
+
           role: "Founder & Full Stack Developer",
-          bio: "Fokus auf skalierbare SaaS-Plattformen, Business-Software, Web-Anwendungen, Systemintegrationen, Cloud-Infrastruktur und moderne digitale Produkte.",
+
+          bio: "Fokus auf SaaS-Plattformen, Business-Software, Web-Anwendungen, Integrationen, Cloud-Infrastruktur und End-to-End Product Engineering.",
+
           image: "/images/hadiur.jpg",
+
           tags: ["Next.js", "React", "Node.js", "TypeScript", "MongoDB", "AWS"],
         },
+
         {
           name: "Nihal Nallari",
+
           role: "Founder & AI Engineer",
-          bio: "Fokus auf KI-Systeme, Machine Learning, Computer Vision, intelligente Automatisierung und praktische KI-Anwendungen für Unternehmen.",
+
+          bio: "Fokus auf Machine Learning, Computer Vision, intelligente Automatisierung und praktische KI-Systeme zur Lösung operativer Geschäftsprobleme.",
+
           image: "/images/nihal.jpg",
+
           tags: [
             "AI Systems",
-            "ML",
+            "Machine Learning",
             "Automation",
             "Python",
             "LLMs",
@@ -605,10 +975,15 @@ export const siteContent: Record<Lang, SiteContent> = {
     },
 
     footer: {
-      left: "© 2026 VexnoraSoft. Alle Rechte vorbehalten.",
-      right: "Powered by VexnoraSoft",
+      left: "Software, SaaS, KI und digitale Systeme für reale Geschäftsabläufe.",
+
+      right: "Designed in Germany. Built for global digital business.",
     },
   },
+
+  // ============================================================
+  // BANGLA
+  // ============================================================
 
   bn: {
     nav: {
@@ -617,284 +992,467 @@ export const siteContent: Record<Lang, SiteContent> = {
       pricing: "সহযোগিতা",
       testimonials: "কাজের পদ্ধতি",
       contact: "যোগাযোগ",
-      cta: "পরামর্শ বুক করুন",
+      cta: "পরামর্শ নিন",
     },
 
+    // ============================================================
+    // HERO
+    // ============================================================
+
     hero: {
-      badge: "আধুনিক ব্যবসার জন্য সফটওয়্যার পার্টনার",
+      badge: "আধুনিক ব্যবসার জন্য সফটওয়্যার ইঞ্জিনিয়ারিং",
+
       title1: "আমরা ডিজাইন ও তৈরি করি",
       title2: "শক্তিশালী ডিজিটাল পণ্য",
-      title3: "যা বাস্তব ব্যবসাকে এগিয়ে নিয়ে যায়।",
-      desc: "VexnoraSoft আধুনিক ওয়েব অ্যাপ্লিকেশন, মোবাইল অ্যাপ, SaaS প্ল্যাটফর্ম, AI সিস্টেম এবং কাস্টম বিজনেস সফটওয়্যার তৈরি করে — স্কেলেবিলিটি, নিরাপত্তা ও বাস্তব ব্যবসায়িক প্রয়োজনকে কেন্দ্র করে।",
+      title3: "বাস্তব ব্যবসার জন্য।",
+
+      desc: "VexnoraSoft আধুনিক ওয়েব অ্যাপ্লিকেশন, মোবাইল প্রোডাক্ট, SaaS প্ল্যাটফর্ম, AI সিস্টেম এবং কাস্টম বিজনেস সফটওয়্যার তৈরি করে — শক্তিশালী আর্কিটেকচার, ভালো ব্যবহারকারীর অভিজ্ঞতা এবং বাস্তব অপারেশনাল প্রয়োজনকে একত্রিত করে।",
+
       primary: "প্রজেক্ট শুরু করুন",
-      secondary: "আমাদের সেবা দেখুন",
-      chips: ["ওয়েব ও মোবাইল অ্যাপ", "বিজনেস অটোমেশন", "AI ও স্মার্ট সলিউশন"],
+
+      secondary: "সেবাসমূহ দেখুন",
+
+      chips: [
+        "ওয়েব ও মোবাইল প্রোডাক্ট",
+        "বিজনেস অটোমেশন",
+        "AI ও ইন্টেলিজেন্ট সিস্টেম",
+      ],
     },
 
     feature: {
-      eyebrow: "মূল সক্ষমতা",
-      title: "আইডিয়া থেকে পূর্ণাঙ্গ ডিজিটাল পণ্য",
+      eyebrow: "ইঞ্জিনিয়ারিং সক্ষমতা",
+
+      title: "আইডিয়া থেকে বাস্তব অপারেশন পর্যন্ত সংযুক্ত ডিজিটাল সিস্টেম",
+
       live: "সক্রিয়",
+
       items: [
         [
-          "ডিসকভারি ও স্ট্র্যাটেজি",
-          "ব্যবসায়িক লক্ষ্য, ব্যবহারকারীর প্রয়োজন, কার্যপ্রবাহ এবং প্রযুক্তিগত রোডম্যাপ নির্ধারণ করি।",
+          "বিশ্লেষণ ও পরিকল্পনা",
+          "প্রযুক্তিগত সিদ্ধান্ত নেওয়ার আগে আমরা ব্যবসার সমস্যা, ব্যবহারকারী, কার্যপ্রবাহ, প্রয়োজন এবং পরিমাপযোগ্য লক্ষ্য বুঝে নিই।",
         ],
+
         [
-          "UI/UX ও ফ্রন্টএন্ড",
-          "আধুনিক, সহজ এবং ব্যবহারকারী-কেন্দ্রিক ডিজিটাল ইন্টারফেস তৈরি করি।",
+          "ডিজাইন ও ইঞ্জিনিয়ারিং",
+          "প্রয়োজনগুলোকে ব্যবহারযোগ্য ইন্টারফেস, রক্ষণাবেক্ষণযোগ্য সফটওয়্যার এবং স্কেলেবল প্রোডাক্ট আর্কিটেকচারে রূপান্তর করি।",
         ],
+
         [
-          "ব্যাকএন্ড ও ইন্টিগ্রেশন",
-          "স্কেলেবল API, অথেন্টিকেশন, পেমেন্ট, ড্যাশবোর্ড, অটোমেশন এবং তৃতীয় পক্ষের সিস্টেম ইন্টিগ্রেশন তৈরি করি।",
+          "সিস্টেম ও ইন্টিগ্রেশন",
+          "API, অথেন্টিকেশন, পেমেন্ট, ডেটাবেস, অটোমেশন এবং বাহ্যিক সিস্টেমকে একটি নির্ভরযোগ্য প্ল্যাটফর্মে যুক্ত করি।",
         ],
+
         [
-          "ডিপ্লয়মেন্ট ও স্কেলিং",
-          "প্রোডাকশন ডিপ্লয়মেন্ট, অপ্টিমাইজেশন, অবকাঠামো, মনিটরিং এবং ভবিষ্যৎ স্কেলিংয়ের ব্যবস্থা করি।",
+          "ডিপ্লয় ও পরিচালনা",
+          "প্রোডাকশন, অবকাঠামো, মনিটরিং, অপ্টিমাইজেশন এবং ভবিষ্যৎ উন্নয়নের জন্য সফটওয়্যার প্রস্তুত করি।",
         ],
       ],
     },
 
+    // ============================================================
+    // TRUST
+    // ============================================================
+
     trust: [
-      ["উচ্চমানের ইঞ্জিনিয়ারিং", "দ্রুত, নিরাপদ ও স্কেলেবল"],
-      ["আধুনিক প্রযুক্তি", "React, Next.js, Node.js"],
-      ["ব্যবসা-কেন্দ্রিক", "বাস্তব অপারেশনের জন্য তৈরি"],
-      ["ফ্লেক্সিবল ডেলিভারি", "MVP থেকে পূর্ণাঙ্গ প্ল্যাটফর্ম"],
+      [
+        "ইঞ্জিনিয়ারিং মান",
+        "নির্ভরযোগ্য আর্কিটেকচার ও রক্ষণাবেক্ষণযোগ্য সফটওয়্যার",
+      ],
+
+      ["আধুনিক প্রযুক্তি", "ওয়েব, ক্লাউড ও অ্যাপ্লিকেশন ইঞ্জিনিয়ারিং"],
+
+      ["অপারেশনাল চিন্তাভাবনা", "বাস্তব ব্যবসায়িক কার্যপ্রবাহের জন্য ডিজাইন"],
+
+      [
+        "ফ্লেক্সিবল ডেলিভারি",
+        "নির্দিষ্ট প্রজেক্ট থেকে দীর্ঘমেয়াদি ডেভেলপমেন্ট",
+      ],
     ],
 
+    // ============================================================
+    // SERVICES
+    // ============================================================
+
     services: {
-      eyebrow: "আমাদের সেবা",
-      title: "বাস্তব ব্যবসায়িক চাহিদার জন্য আধুনিক সফটওয়্যার সলিউশন।",
-      desc: "আমরা প্রতিষ্ঠানকে কাস্টম সফটওয়্যার, SaaS প্ল্যাটফর্ম, ওয়েব ও মোবাইল অ্যাপ, AI এবং অটোমেশন সলিউশন তৈরি করতে সহায়তা করি।",
+      eyebrow: "ইঞ্জিনিয়ারিং সক্ষমতা",
+
+      title:
+        "আপনার ব্যবসা যেভাবে কাজ করে, সেই বাস্তবতার ওপর ভিত্তি করে সফটওয়্যার।",
+
+      desc: "কাস্টমার-ফেসিং ডিজিটাল প্রোডাক্ট থেকে শুরু করে দৈনন্দিন অপারেশনের পেছনের সিস্টেম পর্যন্ত — আমরা এমন প্রযুক্তি তৈরি করি যা বাস্তব সমস্যা সমাধান করে, বিদ্যমান কার্যপ্রবাহের সঙ্গে যুক্ত হয় এবং ব্যবসার সঙ্গে দীর্ঘমেয়াদে বিকশিত হতে পারে।",
+
       items: [
         {
           title: "কাস্টম সফটওয়্যার ডেভেলপমেন্ট",
-          desc: "ব্যবসার নির্দিষ্ট প্রক্রিয়া অনুযায়ী বিজনেস অ্যাপ্লিকেশন, ড্যাশবোর্ড, পোর্টাল এবং পূর্ণাঙ্গ সফটওয়্যার প্ল্যাটফর্ম।",
+
+          desc: "অপারেশনাল প্ল্যাটফর্ম, বিজনেস অ্যাপ্লিকেশন, অ্যাডমিন সিস্টেম, পোর্টাল, ড্যাশবোর্ড এবং নির্দিষ্ট ব্যবসায়িক কার্যপ্রবাহের জন্য কাস্টম ডিজিটাল টুল।",
         },
+
         {
           title: "SaaS ও প্ল্যাটফর্ম ইঞ্জিনিয়ারিং",
-          desc: "মাল্টি-টেন্যান্ট SaaS, সাবস্ক্রিপশন সিস্টেম, মার্কেটপ্লেস, অ্যাডমিন প্ল্যাটফর্ম এবং স্কেলেবল ক্লাউড আর্কিটেকচার।",
+
+          desc: "মাল্টি-টেন্যান্ট SaaS, মার্কেটপ্লেস, সাবস্ক্রিপশন প্ল্যাটফর্ম এবং স্কেলেবল ক্লাউড সিস্টেম — দীর্ঘমেয়াদি ডিজিটাল ব্যবসার জন্য তৈরি।",
         },
+
         {
-          title: "মোবাইল অ্যাপ ডেভেলপমেন্ট",
-          desc: "iOS ও Android-এর জন্য আধুনিক অ্যাপ — API, অথেন্টিকেশন, পেমেন্ট, নোটিফিকেশন ও রিয়েল-টাইম ফিচারসহ।",
+          title: "ওয়েব ও মোবাইল প্রোডাক্ট",
+
+          desc: "Web, iOS ও Android-এর জন্য আধুনিক অ্যাপ্লিকেশন — অথেন্টিকেশন, API, পেমেন্ট, নোটিফিকেশন, রিয়েল-টাইম ফিচার এবং উন্নত ব্যবহারকারীর অভিজ্ঞতাসহ।",
         },
+
         {
-          title: "AI ও অটোমেশন",
-          desc: "AI-ভিত্তিক সিস্টেম, কম্পিউটার ভিশন, স্মার্ট অটোমেশন, ওয়ার্কফ্লো অপ্টিমাইজেশন এবং বাস্তব ব্যবসায়িক AI সলিউশন।",
+          title: "AI ও ইন্টেলিজেন্ট অটোমেশন",
+
+          desc: "প্র্যাকটিক্যাল AI সিস্টেম, কম্পিউটার ভিশন, স্মার্ট অটোমেশন, ডেটা প্রসেসিং এবং বাস্তব সফটওয়্যারের সঙ্গে যুক্ত AI-ভিত্তিক ব্যবসায়িক ফিচার।",
         },
       ],
     },
+
+    // ============================================================
+    // WORK
+    // ============================================================
 
     work: {
       eyebrow: "নির্বাচিত কাজ",
-      title: "বাস্তব ব্যবসার জন্য তৈরি বাস্তব সফটওয়্যার পণ্য।",
-      desc: "আমাদের কাজের মধ্যে রয়েছে SaaS প্ল্যাটফর্ম, AI সিস্টেম, রেস্টুরেন্ট প্রযুক্তি, মার্কেটপ্লেস, মোবাইল অ্যাপ এবং ব্যবসায়িক অপারেশন সফটওয়্যার।",
+
+      title: "বাস্তব অপারেশনাল সমস্যার জন্য তৈরি ডিজিটাল প্রোডাক্ট।",
+
+      desc: "আমাদের ইঞ্জিনিয়ারিং কাজের মধ্যে রয়েছে SaaS প্রোডাক্ট, AI, হসপিটালিটি প্রযুক্তি, মার্কেটপ্লেস, মোবাইল অ্যাপ এবং ব্যবসায়িক অপারেশন সিস্টেম।",
+
       items: [
         {
           name: "Reivio Web & Mobile App",
-          type: "ভ্রমণ ও বুকিং প্ল্যাটফর্ম",
+
+          type: "ট্রাভেল ও মার্কেটপ্লেস প্ল্যাটফর্ম",
+
           summary:
-            "স্টে, ভ্রমণ, মোবিলিটি, বুকিং এবং স্কেলেবল মার্কেটপ্লেস অপারেশনকে একত্রিত করার জন্য তৈরি আধুনিক ডিজিটাল প্ল্যাটফর্ম।",
+            "স্টে, বুকিং, মোবিলিটি এবং মার্কেটপ্লেস অপারেশনকে একটি স্কেলেবল ডিজিটাল প্ল্যাটফর্মে যুক্ত করার জন্য তৈরি ট্রাভেল ইকোসিস্টেম।",
         },
+
         {
           name: "ZonoVision AI Theft Detection",
-          type: "AI সিকিউরিটি সলিউশন",
+
+          type: "AI ও Computer Vision",
+
           summary:
-            "কম্পিউটার ভিশন, রিয়েল-টাইম ভিডিও বিশ্লেষণ, স্মার্ট ডিটেকশন এবং অ্যালার্টের মাধ্যমে রিটেইল সিকিউরিটির জন্য তৈরি AI সিস্টেম।",
+            "Computer Vision এবং রিয়েল-টাইম প্রসেসিং ব্যবহার করে রিটেইল নিরাপত্তার অপারেশনাল কার্যপ্রবাহকে সহায়তা করার জন্য তৈরি ইন্টেলিজেন্ট মনিটরিং সিস্টেম।",
         },
+
         {
           name: "Mr. Baker Mobile App",
-          type: "ফুড ও কমার্স অ্যাপ",
+
+          type: "Food & Digital Commerce",
+
           summary:
-            "পণ্য ব্রাউজিং, ডিজিটাল অর্ডার এবং কাস্টমার অভিজ্ঞতার জন্য তৈরি আধুনিক মোবাইল ফুড অর্ডারিং অ্যাপ।",
+            "পণ্য ব্রাউজিং, ডিজিটাল অর্ডার এবং ফুড-সার্ভিস অপারেশনকে যুক্ত করার জন্য তৈরি কাস্টমার-কেন্দ্রিক মোবাইল অভিজ্ঞতা।",
         },
+
         {
           name: "Time Track Work Management App",
-          type: "কর্মপরিচালনা প্ল্যাটফর্ম",
+
+          type: "Workforce Operations",
+
           summary:
-            "কর্মঘণ্টা, উৎপাদনশীলতা, টিম অপারেশন, রেকর্ড এবং রিপোর্টিং পরিচালনার জন্য তৈরি ডিজিটাল প্ল্যাটফর্ম।",
+            "কর্মঘণ্টা, টিম অ্যাক্টিভিটি, অপারেশনাল রেকর্ড, প্রোডাক্টিভিটি ও ম্যানেজমেন্ট রিপোর্টিং পরিচালনার জন্য তৈরি ডিজিটাল প্ল্যাটফর্ম।",
         },
+
         {
           name: "SPAR Online Grocery App",
-          type: "ই-কমার্স প্ল্যাটফর্ম",
+
+          type: "Digital Grocery Commerce",
+
           summary:
-            "অনলাইন পণ্য ব্রাউজিং, কার্ট, অর্ডার এবং স্থানীয় ডেলিভারি অপারেশনের জন্য তৈরি ডিজিটাল গ্রোসারি সলিউশন।",
+            "ডিজিটাল পণ্য ব্রাউজিং, কার্ট, অর্ডার এবং লোকাল কমার্স ও ডেলিভারি কার্যপ্রবাহের জন্য তৈরি অনলাইন গ্রোসারি সলিউশন।",
         },
+
         {
           name: "Pizza Casa Online Ordering App",
-          type: "রেস্টুরেন্ট অর্ডারিং সিস্টেম",
+
+          type: "Restaurant Ordering",
+
           summary:
-            "ডিজিটাল মেনু, অনলাইন চেকআউট, গ্রাহক অর্ডার এবং রেস্টুরেন্ট অর্ডার ম্যানেজমেন্টের জন্য তৈরি প্ল্যাটফর্ম।",
+            "ডিজিটাল মেনু, চেকআউট, কাস্টমার অর্ডার এবং রেস্টুরেন্ট অপারেশনাল অর্ডার ফ্লোকে যুক্ত করার জন্য তৈরি প্ল্যাটফর্ম।",
         },
       ],
-      ready: "আপনার ব্যবসার জন্য কাস্টমাইজ করা সম্ভব",
+
+      ready: "আপনার ব্যবসার প্রয়োজন অনুযায়ী কাস্টমাইজ করা সম্ভব",
     },
+
+    // ============================================================
+    // ENGAGEMENT
+    // ============================================================
 
     pricing: {
       eyebrow: "সহযোগিতার ধরন",
-      title: "সফটওয়্যার তৈরি ও পরিচালনার জন্য ফ্লেক্সিবল মডেল।",
-      desc: "প্রজেক্টের পরিধি, প্রযুক্তিগত জটিলতা, ইন্টিগ্রেশন, ডেলিভারি প্রয়োজন এবং দীর্ঘমেয়াদি লক্ষ্য অনুযায়ী সহযোগিতার ধরন নির্ধারণ করা হয়।",
+
+      title: "একসঙ্গে শক্তিশালী সফটওয়্যার তৈরির জন্য ফ্লেক্সিবল সহযোগিতা।",
+
+      desc: "সঠিক সহযোগিতার ধরন নির্ভর করে ব্যবসায়িক সমস্যা, প্রোডাক্টের বর্তমান অবস্থা, প্রযুক্তিগত জটিলতা, আপনার নিজস্ব টিমের সক্ষমতা এবং দীর্ঘমেয়াদি ইঞ্জিনিয়ারিং প্রয়োজনের ওপর।",
+
       plans: [
         {
           name: "Project Delivery",
-          price: "Scope-based",
+
+          price: "কাস্টম স্কোপ",
+
           subtitle: "নির্দিষ্ট সফটওয়্যার প্রজেক্টের জন্য",
+
           features: [
-            "ডিসকভারি ও পরিকল্পনা",
-            "UI/UX ও সফটওয়্যার ডেভেলপমেন্ট",
-            "API ও সিস্টেম ইন্টিগ্রেশন",
-            "প্রোডাকশন ডিপ্লয়মেন্ট",
-            "হ্যান্ডওভার ও সাপোর্ট",
+            "Business ও technical discovery",
+            "Product ও architecture definition",
+            "UI/UX ও software engineering",
+            "System ও API integration",
+            "Deployment ও handover",
           ],
-          cta: "প্রজেক্ট নিয়ে কথা বলুন",
+
+          cta: "প্রজেক্ট নিয়ে আলোচনা করুন",
         },
+
         {
           name: "Dedicated Development Team",
-          price: "Monthly",
-          subtitle: "দীর্ঘমেয়াদি সফটওয়্যার ডেভেলপমেন্টের জন্য",
+
+          price: "কাস্টম মাসিক",
+
+          subtitle: "নিয়মিত প্রোডাক্ট ডেভেলপমেন্টের জন্য",
+
           features: [
-            "ডেডিকেটেড ইঞ্জিনিয়ারিং",
-            "নিয়মিত ডেলিভারি",
-            "প্রোডাক্ট ডেভেলপমেন্ট",
-            "Cloud ও DevOps সাপোর্ট",
-            "দীর্ঘমেয়াদি উন্নয়ন",
+            "Dedicated engineering capacity",
+            "Continuous product delivery",
+            "Frontend ও backend engineering",
+            "Cloud ও infrastructure support",
+            "Long-term technical development",
           ],
-          cta: "টিম নিয়ে কথা বলুন",
+
+          cta: "টিম নিয়ে আলোচনা করুন",
+
           featured: true,
         },
+
         {
           name: "SaaS & Platform",
-          price: "Custom Plan",
-          subtitle: "SaaS ও ডিজিটাল প্ল্যাটফর্মের জন্য",
+
+          price: "কাস্টম মডেল",
+
+          subtitle: "প্ল্যাটফর্ম-ভিত্তিক ব্যবসায়িক সলিউশনের জন্য",
+
           features: [
-            "ক্লাউড-ভিত্তিক প্ল্যাটফর্ম",
-            "সাবস্ক্রিপশন মডেল",
-            "নিয়মিত আপডেট",
-            "টেকনিক্যাল সাপোর্ট",
-            "স্কেলেবল অবকাঠামো",
+            "Cloud-based platform",
+            "Product configuration",
+            "Integration ও workflow",
+            "Continuous improvement",
+            "Technical support",
           ],
+
           cta: "সলিউশন দেখুন",
         },
       ],
     },
 
+    // ============================================================
+    // HOW WE WORK
+    // ============================================================
+
     testimonials: {
       eyebrow: "আমাদের কাজের পদ্ধতি",
+
       title:
-        "ব্যবসায়িক সমস্যা বোঝা থেকে দীর্ঘমেয়াদি অপারেশন পর্যন্ত একটি সম্পূর্ণ ইঞ্জিনিয়ারিং প্রক্রিয়া।",
+        "সমস্যা বোঝা থেকে প্রোডাক্ট পরিচালনা পর্যন্ত একটি পরিষ্কার ইঞ্জিনিয়ারিং প্রক্রিয়া।",
+
       items: [
         {
-          quote:
-            "প্রথমে আমরা ব্যবসার সমস্যা, ব্যবহারকারী, অপারেশনাল চাহিদা এবং পরিমাপযোগ্য লক্ষ্যগুলো বুঝে নিই।",
-          name: "Discover",
+          name: "বোঝা ও পরিকল্পনা",
+
           role: "Business & Product Discovery",
-        },
-        {
+
           quote:
-            "তারপর স্কেলেবল আর্কিটেকচার, পরিষ্কার UX এবং শক্তিশালী সফটওয়্যার ইঞ্জিনিয়ারিংয়ের মাধ্যমে পণ্য তৈরি করি।",
-          name: "Build",
-          role: "Design & Engineering",
+            "প্রথমে আমরা ব্যবসার সমস্যা, ব্যবহারকারী, কার্যপ্রবাহ, সীমাবদ্ধতা এবং পরিমাপযোগ্য ফলাফল বুঝে নিই — এরপর প্রযুক্তিগত সিদ্ধান্ত নেওয়া হয়।",
         },
+
         {
+          name: "ডিজাইন ও তৈরি",
+
+          role: "Architecture, Experience & Engineering",
+
           quote:
-            "লঞ্চের পরেও আমরা অপ্টিমাইজেশন, মনিটরিং, অবকাঠামো, উন্নয়ন এবং ভবিষ্যৎ ফিচার নিয়ে কাজ করি।",
-          name: "Operate",
-          role: "Launch & Continuous Improvement",
+            "প্রয়োজনগুলোকে প্রোডাক্ট আর্কিটেকচার, ব্যবহারকারীর অভিজ্ঞতা এবং রক্ষণাবেক্ষণযোগ্য সফটওয়্যারে রূপান্তর করা হয় একটি ধারাবাহিক ইঞ্জিনিয়ারিং প্রক্রিয়ার মাধ্যমে।",
+        },
+
+        {
+          name: "লঞ্চ ও পরিচালনা",
+
+          role: "Deployment & Continuous Improvement",
+
+          quote:
+            "প্রোডাকশন লঞ্চের পর নির্ভরযোগ্যতা, মনিটরিং, অপ্টিমাইজেশন, অবকাঠামো এবং ভবিষ্যৎ প্রোডাক্ট ডেভেলপমেন্টে গুরুত্ব দেওয়া হয়।",
         },
       ],
     },
 
+    // ============================================================
+    // WHY VEXNORASOFT
+    // ============================================================
+
     about: {
       eyebrow: "কেন VexnoraSoft",
+
       title:
-        "আধুনিক প্রযুক্তি এবং বাস্তব ব্যবসায়িক প্রয়োজনের শক্তিশালী সমন্বয়।",
-      desc: "আমরা শুধু কোড লিখি না। এমন সফটওয়্যার তৈরি করি যা বাস্তব অপারেশন সহজ করে, ব্যবসাকে স্কেল করতে সাহায্য করে এবং দীর্ঘমেয়াদি মূল্য তৈরি করে।",
+        "বাস্তব ব্যবসায়িক কার্যপ্রবাহকে কেন্দ্র করে প্রযুক্তিগত সিদ্ধান্ত।",
+
+      desc: "আমাদের লক্ষ্য শুধু ফিচার তৈরি করা নয়। Business understanding, product thinking এবং engineering-কে একত্রিত করে এমন সফটওয়্যার তৈরি করা যা লঞ্চের পরও দীর্ঘমেয়াদে ব্যবহারযোগ্য, রক্ষণাবেক্ষণযোগ্য এবং মূল্যবান থাকে।",
+
       points: [
-        "জার্মানি-ভিত্তিক ব্যবসায়িক উপস্থিতি",
-        "Full-stack সফটওয়্যার ইঞ্জিনিয়ারিং",
-        "SaaS ও প্ল্যাটফর্ম ডেভেলপমেন্ট",
-        "AI ও অটোমেশন সক্ষমতা",
-        "Cloud ও DevOps অভিজ্ঞতা",
-        "দীর্ঘমেয়াদি প্রোডাক্ট চিন্তাভাবনা",
+        "Business-oriented software engineering",
+
+        "Full-stack product development",
+
+        "SaaS ও platform architecture",
+
+        "AI ও automation capability",
+
+        "Cloud ও system integration experience",
+
+        "Long-term product thinking",
       ],
     },
 
     banner: {
-      eyebrow: "নতুন কিছু তৈরি করতে চান?",
-      title: "আপনার ধারণাকে একটি শক্তিশালী ডিজিটাল পণ্যে রূপ দিন।",
-      desc: "কাস্টম সফটওয়্যার, SaaS প্ল্যাটফর্ম, AI সিস্টেম, মোবাইল অ্যাপ বা ব্যবসায়িক অটোমেশন — আপনার প্রয়োজন অনুযায়ী সঠিক সমাধান পরিকল্পনা ও তৈরি করতে আমরা সহায়তা করি।",
+      eyebrow: "কোনো প্রজেক্টের কথা ভাবছেন?",
+
+      title: "একটি ব্যবসায়িক সমস্যাকে কার্যকর ডিজিটাল সিস্টেমে রূপান্তর করুন।",
+
+      desc: "কাস্টম সফটওয়্যার, SaaS প্রোডাক্ট, AI-ভিত্তিক সিস্টেম, মোবাইল অ্যাপ্লিকেশন বা অপারেশনাল অটোমেশন — সমস্যা পরিষ্কারভাবে সংজ্ঞায়িত করা এবং সঠিক প্রযুক্তিগত সমাধান তৈরি করতে আমরা সহায়তা করতে পারি।",
+
       cta: "আলোচনা শুরু করুন",
     },
 
+    // ============================================================
+    // CONTACT
+    // ============================================================
+
     contact: {
-      eyebrow: "যোগাযোগ",
-      title: "VexnoraSoft-এর সঙ্গে আপনার পরবর্তী প্রজেক্ট শুরু করুন।",
-      desc: "আপনার সফটওয়্যার, অ্যাপ, SaaS প্ল্যাটফর্ম, AI সিস্টেম, ইন্টিগ্রেশন বা অটোমেশন প্রয়োজন নিয়ে আমাদের সঙ্গে আলোচনা করুন।",
+      eyebrow: "আলোচনা শুরু করুন",
+
+      title: "আপনি কী তৈরি, উন্নত বা অটোমেট করতে চান তা আমাদের বলুন।",
+
+      desc: "আপনার ব্যবসায়িক সমস্যা, প্রোডাক্ট আইডিয়া বা অপারেশনাল প্রয়োজন সম্পর্কে জানান। শুরু করার জন্য পূর্ণাঙ্গ technical specification প্রয়োজন নেই — সমস্যাটি বোঝাই প্রথম ধাপ।",
+
       labels: {
         email: "ইমেইল",
+
         website: "ওয়েবসাইট",
+
         location: "অবস্থান",
+
         name: "আপনার নাম",
+
         emailInput: "আপনার ইমেইল",
-        company: "প্রতিষ্ঠানের নাম",
-        service: "প্রয়োজনীয় সেবা",
-        message: "আপনার প্রজেক্ট সম্পর্কে লিখুন",
+
+        company: "প্রতিষ্ঠান",
+
+        service: "প্রয়োজনীয় ক্ষেত্র",
+
+        message: "প্রজেক্ট সম্পর্কে লিখুন",
+
         submit: "বার্তা পাঠান",
+
         success: "আপনার বার্তা সফলভাবে পাঠানো হয়েছে।",
+
         sending: "পাঠানো হচ্ছে...",
       },
+
       services: [
-        "কাস্টম সফটওয়্যার",
+        "কাস্টম সফটওয়্যার ডেভেলপমেন্ট",
+        "SaaS ও প্ল্যাটফর্ম",
         "ওয়েব অ্যাপ্লিকেশন",
-        "মোবাইল অ্যাপ",
-        "SaaS প্ল্যাটফর্ম",
-        "অটোমেশন",
-        "AI সলিউশন",
+        "মোবাইল অ্যাপ্লিকেশন",
+        "AI ও অটোমেশন",
+        "সিস্টেম ইন্টিগ্রেশন",
       ],
     },
 
+    // ============================================================
+    // FOUNDER
+    // ============================================================
+
     founder: {
-      badge: "প্রতিষ্ঠাতা",
+      badge: "Founder & Engineering",
+
       title: "F M Hadiur Rahman",
+
       subtitle: "Founder & Software Engineer",
+
       description:
-        "ব্যবসার ধারণাকে স্কেলেবল ডিজিটাল পণ্য, SaaS প্ল্যাটফর্ম, অপারেশনাল সিস্টেম এবং আধুনিক সফটওয়্যার অ্যাপ্লিকেশনে রূপান্তর করার ওপর কাজ করি।",
+        "ব্যবসায়িক প্রয়োজনকে স্কেলেবল ডিজিটাল প্রোডাক্ট, SaaS প্ল্যাটফর্ম, সংযুক্ত অপারেশনাল সিস্টেম এবং আধুনিক সফটওয়্যার অ্যাপ্লিকেশনে রূপান্তর করার ওপর কাজ করেন।",
+
       description2:
-        "মূল লক্ষ্য হলো শক্তিশালী সফটওয়্যার আর্কিটেকচার, ব্যবহারযোগ্য ডিজাইন, নির্ভরযোগ্য ইঞ্জিনিয়ারিং এবং দীর্ঘমেয়াদি ব্যবসায়িক মূল্য তৈরি করা।",
+        "এই পদ্ধতিতে software architecture, product thinking, ব্যবহারযোগ্য ডিজাইন এবং hands-on engineering-কে একত্রিত করা হয় — যাতে তৈরি সিস্টেম দীর্ঘমেয়াদে কার্যকর ও রক্ষণাবেক্ষণযোগ্য থাকে।",
+
       stats: [
-        { label: "ফোকাস", value: "Software & SaaS" },
-        { label: "মার্কেট", value: "Germany + Global" },
-        { label: "ইঞ্জিনিয়ারিং", value: "Full Stack" },
+        {
+          label: "ফোকাস",
+          value: "Software & SaaS",
+        },
+
+        {
+          label: "মার্কেট",
+          value: "Germany + Global",
+        },
+
+        {
+          label: "ইঞ্জিনিয়ারিং",
+          value: "Full Stack",
+        },
       ],
+
       skills: ["Next.js", "React", "Node.js", "TypeScript", "MongoDB", "AWS"],
+
       ctaPrimary: "আলোচনা শুরু করুন",
+
       ctaSecondary: "আমাদের কাজ দেখুন",
+
       image: "/images/founder.jpg",
     },
 
+    // ============================================================
+    // TEAM
+    // ============================================================
+
     team: {
       badge: "আমাদের টিম",
-      title: "VexnoraSoft-এর পেছনের মানুষগুলো",
-      desc: "আমাদের টিম সফটওয়্যার ইঞ্জিনিয়ারিং, AI, আধুনিক প্রোডাক্ট ডেভেলপমেন্ট এবং বাস্তব ব্যবসায়িক চিন্তাভাবনাকে একত্রিত করে নির্ভরযোগ্য ডিজিটাল সলিউশন তৈরি করে।",
-      ctaPrimary: "আমাদের সঙ্গে কথা বলুন",
+
+      title: "Software Engineering, AI ও product thinking — একই টিমে।",
+
+      desc: "VexnoraSoft software engineering এবং artificial intelligence-এর দক্ষতাকে একত্রিত করে বাস্তব ডিজিটাল প্রোডাক্ট ও অপারেশনাল সিস্টেম তৈরি করে।",
+
+      ctaPrimary: "আমাদের টিমের সঙ্গে কথা বলুন",
+
       ctaSecondary: "আমাদের কাজ দেখুন",
+
       members: [
         {
           name: "F M Hadiur Rahman",
+
           role: "Founder & Full Stack Developer",
-          bio: "স্কেলেবল SaaS প্ল্যাটফর্ম, বিজনেস সফটওয়্যার, ওয়েব অ্যাপ্লিকেশন, সিস্টেম ইন্টিগ্রেশন, ক্লাউড অবকাঠামো এবং আধুনিক ডিজিটাল পণ্য নিয়ে কাজ করেন।",
+
+          bio: "SaaS প্ল্যাটফর্ম, বিজনেস সফটওয়্যার, ওয়েব অ্যাপ্লিকেশন, ইন্টিগ্রেশন, ক্লাউড ইনফ্রাস্ট্রাকচার এবং end-to-end digital product engineering নিয়ে কাজ করেন।",
+
           image: "/images/hadiur.jpg",
+
           tags: ["Next.js", "React", "Node.js", "TypeScript", "MongoDB", "AWS"],
         },
+
         {
           name: "Nihal Nallari",
+
           role: "Founder & AI Engineer",
-          bio: "AI সিস্টেম, মেশিন লার্নিং, কম্পিউটার ভিশন, ইন্টেলিজেন্ট অটোমেশন এবং বাস্তব ব্যবসায়িক AI অ্যাপ্লিকেশন নিয়ে কাজ করেন।",
+
+          bio: "Machine Learning, Computer Vision, intelligent automation এবং বাস্তব ব্যবসায়িক সমস্যা সমাধানের জন্য practical AI systems নিয়ে কাজ করেন।",
+
           image: "/images/nihal.jpg",
+
           tags: [
             "AI Systems",
-            "ML",
+            "Machine Learning",
             "Automation",
             "Python",
             "LLMs",
@@ -904,9 +1462,14 @@ export const siteContent: Record<Lang, SiteContent> = {
       ],
     },
 
+    // ============================================================
+    // FOOTER
+    // ============================================================
+
     footer: {
-      left: "© 2026 VexnoraSoft. সর্বস্বত্ব সংরক্ষিত।",
-      right: "Powered by VexnoraSoft",
+      left: "বাস্তব ব্যবসায়িক অপারেশনের জন্য Software, SaaS, AI এবং ডিজিটাল সিস্টেম।",
+
+      right: "Designed in Germany. Built for global digital business.",
     },
   },
 };
