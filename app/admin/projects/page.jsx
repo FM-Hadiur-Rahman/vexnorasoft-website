@@ -14,7 +14,7 @@ import {
   X,
 } from "lucide-react";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
 
 const emptyForm = {
   title: "",
@@ -46,6 +46,10 @@ export default function AdminProjectsPage() {
       const res = await fetch(`${API_URL}/api/projects/admin`);
       const data = await res.json();
 
+      if (!res.ok) {
+        throw new Error(data.message || "Failed to load projects");
+      }
+
       setProjects(data.projects || []);
     } catch (error) {
       console.error("Failed to load projects", error);
@@ -69,6 +73,7 @@ export default function AdminProjectsPage() {
 
   const handleImageUpload = async (e) => {
     const file = e.target.files?.[0];
+
     if (!file) return;
 
     const formData = new FormData();
@@ -77,7 +82,7 @@ export default function AdminProjectsPage() {
     try {
       setUploading(true);
 
-      const res = await fetch(`${API_URL}/uploads/project-image`, {
+      const res = await fetch(`${API_URL}/api/uploads/project-image`, {
         method: "POST",
         body: formData,
       });
@@ -103,6 +108,7 @@ export default function AdminProjectsPage() {
 
   const handleGalleryUpload = async (e) => {
     const files = Array.from(e.target.files || []);
+
     if (!files.length) return;
 
     const formData = new FormData();
@@ -114,7 +120,7 @@ export default function AdminProjectsPage() {
     try {
       setGalleryUploading(true);
 
-      const res = await fetch(`${API_URL}/uploads/project-gallery`, {
+      const res = await fetch(`${API_URL}/api/uploads/project-gallery`, {
         method: "POST",
         body: formData,
       });
@@ -166,8 +172,8 @@ export default function AdminProjectsPage() {
       setSaving(true);
 
       const url = editingId
-        ? `${API_URL}/projects/${editingId}`
-        : `${API_URL}/projects`;
+        ? `${API_URL}/api/projects/${editingId}`
+        : `${API_URL}/api/projects`;
 
       const method = editingId ? "PUT" : "POST";
 
@@ -190,6 +196,7 @@ export default function AdminProjectsPage() {
 
       setForm(emptyForm);
       setEditingId(null);
+
       await loadProjects();
     } catch (error) {
       console.error("Failed to save project", error);
@@ -217,7 +224,10 @@ export default function AdminProjectsPage() {
       order: project.order || 0,
     });
 
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   const handleCancelEdit = () => {
@@ -233,7 +243,7 @@ export default function AdminProjectsPage() {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`${API_URL}/projects/${id}`, {
+      const res = await fetch(`${API_URL}/api/projects/${id}`, {
         method: "DELETE",
       });
 
@@ -252,7 +262,7 @@ export default function AdminProjectsPage() {
 
   const handleToggle = async (id) => {
     try {
-      const res = await fetch(`${API_URL}/projects/${id}/toggle`, {
+      const res = await fetch(`${API_URL}/api/projects/${id}/toggle`, {
         method: "PATCH",
       });
 
@@ -353,9 +363,11 @@ export default function AdminProjectsPage() {
 
               <label className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-white/10 bg-black/25 px-4 py-6 text-center transition hover:border-cyan-300/50 hover:bg-black/35">
                 <ImagePlus className="mb-2 text-cyan-300" size={24} />
+
                 <span className="text-sm text-white/70">
                   {uploading ? "Uploading image..." : "Choose main image"}
                 </span>
+
                 <span className="mt-1 text-xs text-white/40">
                   PNG, JPG or WEBP
                 </span>
@@ -395,11 +407,13 @@ export default function AdminProjectsPage() {
 
               <label className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-white/10 bg-black/25 px-4 py-6 text-center transition hover:border-cyan-300/50 hover:bg-black/35">
                 <ImagePlus className="mb-2 text-cyan-300" size={24} />
+
                 <span className="text-sm text-white/70">
                   {galleryUploading
                     ? "Uploading gallery images..."
                     : "Choose multiple gallery images"}
                 </span>
+
                 <span className="mt-1 text-xs text-white/40">
                   You can select more than one image
                 </span>
@@ -502,6 +516,7 @@ export default function AdminProjectsPage() {
               className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {editingId ? <Save size={17} /> : <Plus size={17} />}
+
               {saving
                 ? "Saving..."
                 : editingId
@@ -532,6 +547,7 @@ export default function AdminProjectsPage() {
             <div className="grid gap-4 md:grid-cols-2">
               {projects.map((project) => {
                 const gallery = project.galleryImages || [];
+
                 const previewImage = project.imageUrl || gallery[0] || "";
 
                 return (
@@ -651,6 +667,7 @@ function Input({ label, className = "", ...props }) {
   return (
     <label className={`block ${className}`}>
       <span className="mb-2 block text-sm text-white/65">{label}</span>
+
       <input
         {...props}
         className="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/30 focus:border-cyan-300"
@@ -663,6 +680,7 @@ function Textarea({ label, className = "", ...props }) {
   return (
     <label className={`block ${className}`}>
       <span className="mb-2 block text-sm text-white/65">{label}</span>
+
       <textarea
         {...props}
         rows={4}
@@ -676,6 +694,7 @@ function Checkbox({ label, ...props }) {
   return (
     <label className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-sm text-white/70">
       <input type="checkbox" {...props} className="h-4 w-4 accent-cyan-400" />
+
       {label}
     </label>
   );
