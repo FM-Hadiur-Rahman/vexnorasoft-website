@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import type { ReactNode } from "react";
 import type { Lang } from "@/types/site";
 import { siteContent } from "@/data/siteContent";
@@ -19,15 +18,18 @@ import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/sections/Footer";
 import CookieConsent from "@/components/common/CookieConsent";
 
-export default function VexnoraSoftWebsite() {
-  const [lang, setLang] = useState<Lang>("de");
-  const content = siteContent[lang];
+type Props = {
+  locale: Lang;
+};
+
+export default function VexnoraSoftWebsite({ locale }: Props) {
+  const content = siteContent[locale];
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#020617] text-white">
       <SiteBackground />
 
-      <Navbar lang={lang} setLang={setLang} nav={content.nav} />
+      <Navbar lang={locale} nav={content.nav} />
 
       <main className="relative z-10">
         <Hero hero={content.hero} feature={content.feature} />
@@ -68,6 +70,7 @@ export default function VexnoraSoftWebsite() {
       </main>
 
       <Footer footer={content.footer} />
+
       <CookieConsent />
     </div>
   );
@@ -79,7 +82,9 @@ function SiteBackground() {
       <div className="absolute inset-0 bg-[#020617]" />
 
       <div className="absolute left-[-14%] top-[-16%] h-[520px] w-[520px] rounded-full bg-blue-600/12 blur-3xl" />
+
       <div className="absolute right-[-12%] top-[6%] h-[620px] w-[620px] rounded-full bg-sky-500/10 blur-3xl" />
+
       <div className="absolute bottom-[-20%] left-[18%] h-[560px] w-[560px] rounded-full bg-indigo-700/12 blur-3xl" />
 
       <div className="absolute inset-0 opacity-[0.03] [background-image:linear-gradient(rgba(255,255,255,.18)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.18)_1px,transparent_1px)] [background-size:56px_56px]" />
