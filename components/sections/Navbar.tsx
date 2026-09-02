@@ -31,7 +31,7 @@ export default function Navbar({ lang, setLang }: Props) {
   const [settings, setSettings] = useState<SiteSettings>({
     companyName: "VexnoraSoft",
     tagline: "Enterprise Software Engineering",
-    logoUrl: "",
+    logoUrl: "logo.png",
   });
 
   useEffect(() => {
