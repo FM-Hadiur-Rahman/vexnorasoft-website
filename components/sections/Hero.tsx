@@ -61,7 +61,7 @@ export default function Hero({ hero }: Props) {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-            Backpunkt IT Solutions entwickelt sichere Softwareplattformen,
+            VexnoraSoft entwickelt sichere Softwareplattformen,
             mobile Apps, KI-Systeme und digitale Infrastruktur für Unternehmen,
             öffentliche Auftraggeber und skalierbares Wachstum.
           </p>

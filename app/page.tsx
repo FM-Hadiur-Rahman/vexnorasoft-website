@@ -1,5 +1,5 @@
-import BackpunktWebsite from "@/components/BackpunktWebsite";
+import VexnoraSoftWebsite from "@/components/VexnoraSoftWebsite";
 
 export default function Page() {
-  return <BackpunktWebsite />;
+  return <VexnoraSoftWebsite />;
 }

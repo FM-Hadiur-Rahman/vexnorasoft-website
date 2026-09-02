@@ -59,7 +59,7 @@ export default function ImpressumPage() {
               <p className="leading-7 text-white/75">
                 Telefon: +49 1575 7280567
                 <br />
-                E-Mail: info@backpunkt.de
+                E-Mail: info@vexnorasoft.com
               </p>
             </section>
 

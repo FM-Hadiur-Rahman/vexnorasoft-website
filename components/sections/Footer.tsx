@@ -53,10 +53,10 @@ export default function Footer({ footer }: Props) {
       <div className="mx-auto grid max-w-7xl gap-8 text-sm text-white/55 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
-            Backpunkt IT
+            VexnoraSoft
           </div>
           <div className="mt-3 text-lg font-semibold text-white">
-            {settings.companyName || "Backpunkt IT Solutions"}
+            {settings.companyName || "VexnoraSoft"}
           </div>
           <p className="mt-3 max-w-md leading-7">
             {footer.left ||
@@ -133,7 +133,7 @@ export default function Footer({ footer }: Props) {
       <div className="mx-auto mt-8 flex max-w-7xl flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
         <div>
           © {new Date().getFullYear()}{" "}
-          {settings.companyName || "Backpunkt IT Solutions"}. All rights
+          {settings.companyName || "VexnoraSoft"}. All rights
           reserved.
         </div>
         <div>{footer.right}</div>

@@ -29,7 +29,7 @@ type SiteSettings = {
 export default function Navbar({ lang, setLang }: Props) {
   const [open, setOpen] = useState(false);
   const [settings, setSettings] = useState<SiteSettings>({
-    companyName: "Backpunkt IT Solutions",
+    companyName: "VexnoraSoft",
     tagline: "Enterprise Software Engineering",
     logoUrl: "",
   });
@@ -65,7 +65,7 @@ export default function Navbar({ lang, setLang }: Props) {
             {settings.logoUrl ? (
               <Image
                 src={settings.logoUrl}
-                alt={settings.companyName || "Backpunkt IT Solutions"}
+                alt={settings.companyName || "VexnoraSoft"}
                 fill
                 sizes="48px"
                 className="object-contain p-1"
@@ -78,7 +78,7 @@ export default function Navbar({ lang, setLang }: Props) {
 
           <div className="min-w-0">
             <div className="truncate text-lg font-semibold leading-tight text-white">
-              {settings.companyName || "Backpunkt IT Solutions"}
+              {settings.companyName || "VexnoraSoft"}
             </div>
 
             <div className="hidden max-w-[360px] truncate text-[11px] font-medium uppercase tracking-[0.22em] text-blue-300 sm:block">

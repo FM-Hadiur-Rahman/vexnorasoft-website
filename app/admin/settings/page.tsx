@@ -34,19 +34,19 @@ const tabs = [
 ];
 
 const initialSettings = {
-  companyName: "Backpunkt IT Solutions",
+  companyName: "VexnoraSoft",
   tagline: "Modern SaaS & IT solutions for growing businesses",
   logoUrl: "",
   faviconUrl: "",
-  email: "info@backpunkt-it.com",
+  email: "info@vexnorasoft.com",
   phone: "+49 000 000000",
   address: "Mülheim an der Ruhr, Germany",
-  website: "https://backpunkt-it.com",
+  website: "https://vexnorasoft.com",
   facebook: "",
   instagram: "",
   linkedin: "",
   youtube: "",
-  metaTitle: "Backpunkt IT Solutions | SaaS & Software Development",
+  metaTitle: "VexnoraSoft | SaaS & Software Development",
   metaDescription:
     "We build modern web apps, SaaS platforms, dashboards, booking systems, POS software and automation solutions.",
   keywords: "software company Germany, SaaS development, web app development",

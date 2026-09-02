@@ -456,7 +456,7 @@ export default function AdminPricingBuilderPage() {
       <html lang="de">
         <head>
           <meta charset="UTF-8" />
-          <title>Angebot - Backpunkt IT Solutions</title>
+          <title>Angebot - VexnoraSoft</title>
           <style>
             @page {
               size: A4;
@@ -611,9 +611,9 @@ export default function AdminPricingBuilderPage() {
           <div class="page">
             <div class="header">
               <div class="brand-wrap">
-                <img src="${logoUrl}" alt="Backpunkt Logo" class="logo" />
+                <img src="${logoUrl}" alt="VexnoraSoft Logo" class="logo" />
                 <div>
-                  <h1 class="brand">Backpunkt IT Solutions</h1>
+                  <h1 class="brand">VexnoraSoft</h1>
                   <p class="sub">Angebot / Projektkalkulation</p>
                 </div>
               </div>
@@ -713,7 +713,7 @@ export default function AdminPricingBuilderPage() {
             </div>
 
             <div class="footer">
-              Backpunkt IT Solutions · Web, App & Software Development
+              VexnoraSoft · Web, App & Software Development
             </div>
           </div>
         </body>

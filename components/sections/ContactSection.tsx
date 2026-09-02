@@ -117,14 +117,14 @@ export default function ContactSection({ contact }: Props) {
               <div className="mb-2 flex items-center gap-2 text-cyan-300">
                 <Mail className="h-4 w-4" /> {contact.labels.email}
               </div>
-              <div>info@backpunkt-management.de</div>
+              <div>info@vexnorasoft.com</div>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <div className="mb-2 flex items-center gap-2 text-cyan-300">
                 <Globe className="h-4 w-4" /> {contact.labels.website}
               </div>
-              <div>it.backpunkt-management.de</div>
+              <div>vexnorasoft.com</div>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">

@@ -62,7 +62,7 @@ const models = [
   },
 ];
 
-export default function Pricing({ productKey = "backpunkt" }: Props) {
+export default function Pricing({ productKey = "vexnorasoft" }: Props) {
   console.log(productKey);
 
   return (

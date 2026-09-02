@@ -5,7 +5,7 @@ import { Cookie, Settings, X } from "lucide-react";
 
 type Consent = "accepted" | "essential";
 
-const STORAGE_KEY = "backpunkt_cookie_consent";
+const STORAGE_KEY = "vexnorasoft_cookie_consent";
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);

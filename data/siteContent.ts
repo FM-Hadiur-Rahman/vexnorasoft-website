@@ -15,7 +15,7 @@ export const siteContent: Record<Lang, SiteContent> = {
       title1: "We design and build",
       title2: "premium digital products",
       title3: "that help businesses grow.",
-      desc: "Backpunkt IT Solutions creates high-end websites, mobile apps, custom platforms, and business software with a strong focus on quality, speed, and long-term scalability.",
+      desc: "VexnoraSoft creates high-end websites, mobile apps, custom platforms, and business software with a strong focus on quality, speed, and long-term scalability.",
       primary: "Start Your Project",
       secondary: "Explore Services",
       chips: ["Web & App", "Business Automation", "AI-Ready Solutions"],
@@ -169,7 +169,7 @@ export const siteContent: Record<Lang, SiteContent> = {
       items: [
         {
           quote:
-            "Backpunkt IT Solutions combines strong technical execution with a clear business mindset. The communication was fast, professional, and solution-oriented.",
+            "VexnoraSoft combines strong technical execution with a clear business mindset. The communication was fast, professional, and solution-oriented.",
           name: "Daniel M.",
           role: "Business Owner",
         },
@@ -208,7 +208,7 @@ export const siteContent: Record<Lang, SiteContent> = {
     },
     contact: {
       eyebrow: "Contact",
-      title: "Start your next project with Backpunkt IT Solutions.",
+      title: "Start your next project with VexnoraSoft.",
       desc: "Reach out to discuss your website, app, platform, automation, or software idea. We’ll help shape the right solution.",
       labels: {
         email: "Email",
@@ -253,8 +253,8 @@ export const siteContent: Record<Lang, SiteContent> = {
     },
     team: {
       badge: "Meet the Founders",
-      title: "The people behind Backpunkt IT Solutions",
-      desc: "Backpunkt IT Solutions is built by a team that combines strong engineering execution with modern product thinking, AI capability, and practical business focus.",
+      title: "The people behind VexnoraSoft",
+      desc: "VexnoraSoft is built by a team that combines strong engineering execution with modern product thinking, AI capability, and practical business focus.",
       ctaPrimary: "Book a Consultation",
       ctaSecondary: "View Our Work",
       members: [
@@ -282,8 +282,8 @@ export const siteContent: Record<Lang, SiteContent> = {
       ],
     },
     footer: {
-      left: "© 2026 Backpunkt IT Solutions. All rights reserved.",
-      right: "Powered by Backpunkt Management GmbH",
+      left: "© 2026 VexnoraSoft. All rights reserved.",
+      right: "Powered by VexnoraSoft",
     },
   },
 
@@ -301,7 +301,7 @@ export const siteContent: Record<Lang, SiteContent> = {
       title1: "Wir konzipieren und entwickeln",
       title2: "hochwertige digitale Produkte",
       title3: "für nachhaltiges Unternehmenswachstum.",
-      desc: "Backpunkt IT Solutions entwickelt hochwertige Websites, mobile Apps, individuelle Plattformen und Business-Software mit Fokus auf Qualität, Geschwindigkeit und langfristige Skalierbarkeit.",
+      desc: "VexnoraSoft entwickelt hochwertige Websites, mobile Apps, individuelle Plattformen und Business-Software mit Fokus auf Qualität, Geschwindigkeit und langfristige Skalierbarkeit.",
       primary: "Projekt starten",
       secondary: "Leistungen ansehen",
       chips: ["Web & App", "Business-Automation", "KI-fähige Lösungen"],
@@ -457,7 +457,7 @@ export const siteContent: Record<Lang, SiteContent> = {
       items: [
         {
           quote:
-            "Backpunkt IT Solutions verbindet starke technische Umsetzung mit klarem Business-Verständnis. Die Kommunikation war schnell, professionell und lösungsorientiert.",
+            "VexnoraSoft verbindet starke technische Umsetzung mit klarem Business-Verständnis. Die Kommunikation war schnell, professionell und lösungsorientiert.",
           name: "Daniel M.",
           role: "Unternehmer",
         },
@@ -497,7 +497,7 @@ export const siteContent: Record<Lang, SiteContent> = {
     },
     contact: {
       eyebrow: "Kontakt",
-      title: "Starten Sie Ihr nächstes Projekt mit Backpunkt IT Solutions.",
+      title: "Starten Sie Ihr nächstes Projekt mit VexnoraSoft.",
       desc: "Sprechen Sie mit uns über Ihre Website, App, Plattform, Automatisierung oder Software-Idee. Gemeinsam definieren wir die passende Lösung.",
       labels: {
         email: "E-Mail",
@@ -542,8 +542,8 @@ export const siteContent: Record<Lang, SiteContent> = {
     },
     team: {
       badge: "Die Gründer",
-      title: "Die Menschen hinter Backpunkt IT Solutions",
-      desc: "Backpunkt IT Solutions wird von einem Team aufgebaut, das starke technische Umsetzung mit modernem Produktdenken, KI-Kompetenz und praktischem Business-Fokus verbindet.",
+      title: "Die Menschen hinter VexnoraSoft",
+      desc: "VexnoraSoft wird von einem Team aufgebaut, das starke technische Umsetzung mit modernem Produktdenken, KI-Kompetenz und praktischem Business-Fokus verbindet.",
       ctaPrimary: "Beratung anfragen",
       ctaSecondary: "Unsere Projekte ansehen",
       members: [
@@ -572,8 +572,8 @@ export const siteContent: Record<Lang, SiteContent> = {
     },
 
     footer: {
-      left: "© 2026 Backpunkt IT Solutions. Alle Rechte vorbehalten.",
-      right: "Powered by Backpunkt Management GmbH",
+      left: "© 2026 VexnoraSoft. Alle Rechte vorbehalten.",
+      right: "Powered by VexnoraSoft",
     },
   },
 };

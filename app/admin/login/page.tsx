@@ -65,7 +65,7 @@ export default function AdminLoginPage() {
         <div className="w-full max-w-md rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
           <div className="mb-8">
             <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
-              Backpunkt IT Solutions
+              VexnoraSoft
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight">
               Admin Login
@@ -82,7 +82,7 @@ export default function AdminLoginPage() {
                 <Mail className="h-4 w-4 text-cyan-300" />
                 <input
                   type="email"
-                  placeholder="admin@backpunkt-management.de"
+                  placeholder="admin@vexnorasoft.com"
                   value={form.email}
                   onChange={(e) =>
                     setForm((prev) => ({ ...prev, email: e.target.value }))

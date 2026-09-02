@@ -19,7 +19,7 @@ import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/sections/Footer";
 import CookieConsent from "@/components/common/CookieConsent";
 
-export default function BackpunktWebsite() {
+export default function VexnoraSoftWebsite() {
   const [lang, setLang] = useState<Lang>("de");
   const content = siteContent[lang];
 
@@ -61,7 +61,7 @@ export default function BackpunktWebsite() {
         </SectionBlock>
 
         <SectionBlock compact>
-          <Pricing productKey="backpunkt" />
+          <Pricing productKey="vexnorasoft" />
         </SectionBlock>
 
         <ContactSection contact={content.contact} />

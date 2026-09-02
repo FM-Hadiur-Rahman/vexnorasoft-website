@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
-const SITE_URL = "https://it.backpunkt-management.de";
+const SITE_URL = "https://vexnorasoft.com";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,18 +44,18 @@ export async function generateMetadata(): Promise<Metadata> {
 
   const title =
     settings.metaTitle ||
-    `${settings.companyName || "Backpunkt IT Solutions"} | Web, App & Software Development`;
+    `${settings.companyName || "VexnoraSoft"} | Web, App & Software Development`;
 
   const description =
     settings.metaDescription ||
     settings.tagline ||
-    "Backpunkt IT Solutions develops modern websites, mobile apps, business platforms, and custom software solutions for companies in Germany and beyond.";
+    "VexnoraSoft develops modern websites, mobile apps, business platforms, and custom software solutions for companies in Germany and beyond.";
 
   const keywords = settings.keywords
     ?.split(",")
     .map((item) => item.trim())
     .filter(Boolean) || [
-    "Backpunkt IT Solutions",
+    "VexnoraSoft",
     "software development Germany",
     "web development Germany",
     "app development Germany",
@@ -71,14 +71,14 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(SITE_URL),
     title: {
       default: title,
-      template: `%s | ${settings.companyName || "Backpunkt IT Solutions"}`,
+      template: `%s | ${settings.companyName || "VexnoraSoft"}`,
     },
     description,
     keywords,
-    applicationName: settings.companyName || "Backpunkt IT Solutions",
-    authors: [{ name: "BackPunkt Management GmbH" }],
-    creator: "BackPunkt Management GmbH",
-    publisher: "BackPunkt Management GmbH",
+    applicationName: settings.companyName || "VexnoraSoft",
+    authors: [{ name: "VexnoraSoft" }],
+    creator: "VexnoraSoft",
+    publisher: "VexnoraSoft",
     robots: {
       index: true,
       follow: true,
@@ -97,7 +97,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       url: SITE_URL,
-      siteName: settings.companyName || "Backpunkt IT Solutions",
+      siteName: settings.companyName || "VexnoraSoft",
       locale: "de_DE",
       type: "website",
       images: settings.logoUrl ? [settings.logoUrl] : undefined,

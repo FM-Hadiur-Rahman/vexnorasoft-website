@@ -46,7 +46,7 @@ export default function DatenschutzPage() {
                 Deutschland
                 <br />
                 <br />
-                E-Mail: info@backpunkt.de
+                E-Mail: info@vexnorasoft.com
                 <br />
                 Telefon: +49 1575 7280567
               </p>

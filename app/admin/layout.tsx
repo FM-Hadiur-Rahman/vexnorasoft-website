@@ -193,7 +193,7 @@ export default function AdminLayout({
             <div className="flex items-center justify-between border-b border-white/10 px-6 py-5">
               <div>
                 <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
-                  Backpunkt IT
+                  VexnoraSoft
                 </div>
                 <div className="mt-2 text-xl font-semibold">Admin Panel</div>
               </div>
@@ -218,7 +218,7 @@ export default function AdminLayout({
                     Administrator
                   </div>
                   <div className="truncate text-xs text-white/50">
-                    {adminUser?.email || "admin@backpunkt.de"}
+                    {adminUser?.email || "admin@vexnorasoft.com"}
                   </div>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function AdminLayout({
 
                 <div>
                   <div className="text-xs uppercase tracking-[0.3em] text-cyan-300">
-                    Backpunkt IT Solutions
+                    VexnoraSoft
                   </div>
                   <h1 className="mt-1 text-xl font-semibold">{pageTitle}</h1>
                 </div>

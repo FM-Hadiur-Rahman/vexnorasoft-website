@@ -44,7 +44,7 @@ type FormState = {
 };
 
 const productMap: Record<string, string> = {
-  backpunkt: "Backpunkt IT Solutions",
+  vexnorasoft: "VexnoraSoft",
   zonoops: "ZonoOps",
   zonovision: "ZonoVision",
   zonosupplyn: "ZonoSupplyn",
@@ -56,8 +56,8 @@ const productMap: Record<string, string> = {
 };
 
 const emptyForm: FormState = {
-  productKey: "backpunkt",
-  productName: "Backpunkt IT Solutions",
+  productKey: "vexnorasoft",
+  productName: "VexnoraSoft",
   name: "",
   description: "",
   price: "",
@@ -80,7 +80,7 @@ export default function AdminPricingPage() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [form, setForm] = useState<FormState>(emptyForm);
   const [saving, setSaving] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState("backpunkt");
+  const [selectedProduct, setSelectedProduct] = useState("vexnorasoft");
 
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
@@ -145,8 +145,8 @@ export default function AdminPricingPage() {
   const openEdit = (plan: PricingPlan) => {
     setEditingId(plan._id);
     setForm({
-      productKey: plan.productKey || "backpunkt",
-      productName: plan.productName || "Backpunkt IT Solutions",
+      productKey: plan.productKey || "vexnorasoft",
+      productName: plan.productName || "VexnoraSoft",
       name: plan.name,
       description: plan.description,
       price: plan.price,
@@ -349,7 +349,7 @@ export default function AdminPricingPage() {
               Pricing plans
             </h2>
             <p className="mt-3 text-sm leading-7 text-white/60">
-              Manage pricing for Backpunkt services and all SaaS products.
+              Manage pricing for VexnoraSoft services and all SaaS products.
             </p>
           </div>
 
