@@ -72,7 +72,7 @@ export default function Navbar({ lang, setLang }: Props) {
                 priority
               />
             ) : (
-              <span className="text-sm font-bold text-slate-950">BP</span>
+              <span className="text-sm font-bold text-slate-950">VS</span>
             )}
           </div>
 
