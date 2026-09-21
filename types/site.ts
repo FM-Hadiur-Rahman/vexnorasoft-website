@@ -70,17 +70,61 @@ export type ContactLabels = {
   sending: string;
 };
 
+/* =========================================================
+   MISSION & VISION
+========================================================= */
+
+export type MissionVisionContent = {
+  eyebrow: string;
+
+  title: string;
+
+  desc: string;
+
+  mission: {
+    number: string;
+    label: string;
+    title: string;
+    desc: string;
+  };
+
+  vision: {
+    number: string;
+    label: string;
+    title: string;
+    desc: string;
+  };
+
+  principlesEyebrow: string;
+  principlesTitle: string;
+
+  principles: {
+    number: string;
+    title: string;
+    desc: string;
+  }[];
+};
+
+/* =========================================================
+   SITE CONTENT
+========================================================= */
+
 export type SiteContent = {
   nav: NavContent;
+
   hero: HeroContent;
+
   feature: FeatureContent;
+
   trust: [string, string][];
+
   services: {
     eyebrow: string;
     title: string;
     desc: string;
     items: ServiceItem[];
   };
+
   work: {
     eyebrow: string;
     title: string;
@@ -88,29 +132,40 @@ export type SiteContent = {
     items: WorkItem[];
     ready: string;
   };
+
   pricing: {
     eyebrow: string;
     title: string;
     desc: string;
     plans: PricingPlan[];
   };
+
   testimonials: {
     eyebrow: string;
     title: string;
     items: TestimonialItem[];
   };
+
   about: {
     eyebrow: string;
     title: string;
     desc: string;
     points: string[];
   };
+
   banner: {
     eyebrow: string;
     title: string;
     desc: string;
     cta: string;
   };
+
+  /* =======================================================
+     NEW — MISSION & VISION
+  ======================================================= */
+
+  missionVision: MissionVisionContent;
+
   contact: {
     eyebrow: string;
     title: string;
@@ -118,27 +173,35 @@ export type SiteContent = {
     labels: ContactLabels;
     services: string[];
   };
+
   founder: {
     badge: string;
     title: string;
     subtitle: string;
     description: string;
     description2: string;
+
     stats: {
       label: string;
       value: string;
     }[];
+
     skills: string[];
+
     ctaPrimary: string;
     ctaSecondary: string;
+
     image: string;
   };
+
   team: {
     badge: string;
     title: string;
     desc: string;
+
     ctaPrimary: string;
     ctaSecondary: string;
+
     members: {
       name: string;
       role: string;
@@ -147,6 +210,7 @@ export type SiteContent = {
       tags: string[];
     }[];
   };
+
   footer: {
     left: string;
     right: string;

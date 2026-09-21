@@ -341,7 +341,69 @@ export const siteContent: Record<Lang, SiteContent> = {
 
       cta: "Start a Conversation",
     },
+    // ============================================================
+    // MISSION & VISION
+    // ============================================================
 
+    missionVision: {
+      eyebrow: "Mission & Vision",
+
+      title: "Engineering technology that creates lasting business value.",
+
+      desc: "VexnoraSoft exists to turn real operational challenges into dependable digital systems — combining business understanding, software engineering and intelligent technology.",
+
+      mission: {
+        number: "01",
+        label: "Our Mission",
+        title: "Build technology around real business needs.",
+        desc: "Our mission is to design and engineer software that solves meaningful operational problems, simplifies complex workflows and helps organizations work more efficiently. We focus on practical systems that are secure, maintainable, scalable and built for long-term use.",
+      },
+
+      vision: {
+        number: "02",
+        label: "Our Vision",
+        title:
+          "Become a trusted engineering partner for ambitious organizations.",
+        desc: "Our vision is to build VexnoraSoft into an international software engineering company known for connecting strong technology with practical business understanding — creating digital products and platforms that can grow across industries and markets.",
+      },
+
+      principlesEyebrow: "Engineering Principles",
+
+      principlesTitle: "The principles behind how we build.",
+
+      principles: [
+        {
+          number: "01",
+          title: "Solve the business problem first",
+          desc: "Technology decisions begin with understanding the operation, users and measurable business objective.",
+        },
+        {
+          number: "02",
+          title: "Engineer for the long term",
+          desc: "We design systems with maintainability, scalability and future development in mind.",
+        },
+        {
+          number: "03",
+          title: "Security by design",
+          desc: "Security, permissions, data protection and system integrity are considered from the architecture stage.",
+        },
+        {
+          number: "04",
+          title: "Design around real users",
+          desc: "Software should fit the people, processes and environments where it will actually be used.",
+        },
+        {
+          number: "05",
+          title: "Automate with purpose",
+          desc: "AI and automation should reduce friction, repetitive work and operational complexity where they create measurable value.",
+        },
+        {
+          number: "06",
+          title: "Build for growth",
+          desc: "Products should be able to evolve as organizations, users, integrations and business requirements change.",
+        },
+      ],
+    },
     // ============================================================
     // CONTACT
     // ============================================================
@@ -835,7 +897,71 @@ export const siteContent: Record<Lang, SiteContent> = {
 
       cta: "Gespräch starten",
     },
+    // ============================================================
+    // MISSION & VISION
+    // ============================================================
 
+    missionVision: {
+      eyebrow: "Mission & Vision",
+
+      title:
+        "Technologie entwickeln, die langfristigen geschäftlichen Mehrwert schafft.",
+
+      desc: "VexnoraSoft verwandelt reale operative Herausforderungen in zuverlässige digitale Systeme – durch die Verbindung von Geschäftsverständnis, Software Engineering und intelligenten Technologien.",
+
+      mission: {
+        number: "01",
+        label: "Unsere Mission",
+        title:
+          "Technologie auf Basis realer Geschäftsanforderungen entwickeln.",
+        desc: "Unsere Mission ist es, Software zu entwickeln, die relevante operative Probleme löst, komplexe Abläufe vereinfacht und Unternehmen dabei unterstützt, effizienter zu arbeiten. Dabei konzentrieren wir uns auf sichere, wartbare und skalierbare Systeme für den langfristigen Einsatz.",
+      },
+
+      vision: {
+        number: "02",
+        label: "Unsere Vision",
+        title:
+          "Ein vertrauenswürdiger Engineering-Partner für ambitionierte Unternehmen werden.",
+        desc: "Unsere Vision ist es, VexnoraSoft zu einem international tätigen Software-Engineering-Unternehmen zu entwickeln, das technologische Kompetenz mit praktischem Geschäftsverständnis verbindet und digitale Produkte und Plattformen für unterschiedliche Branchen und Märkte entwickelt.",
+      },
+
+      principlesEyebrow: "Engineering-Prinzipien",
+
+      principlesTitle: "Die Prinzipien hinter unserer Entwicklung.",
+
+      principles: [
+        {
+          number: "01",
+          title: "Das Geschäftsproblem zuerst lösen",
+          desc: "Technologische Entscheidungen beginnen mit dem Verständnis von Abläufen, Nutzern und messbaren Geschäftszielen.",
+        },
+        {
+          number: "02",
+          title: "Langfristig entwickeln",
+          desc: "Wir entwickeln Systeme mit Blick auf Wartbarkeit, Skalierbarkeit und zukünftige Weiterentwicklung.",
+        },
+        {
+          number: "03",
+          title: "Security by Design",
+          desc: "Sicherheit, Berechtigungen, Datenschutz und Systemintegrität werden bereits in der Architektur berücksichtigt.",
+        },
+        {
+          number: "04",
+          title: "Für reale Nutzer entwickeln",
+          desc: "Software sollte zu den Menschen, Prozessen und Arbeitsumgebungen passen, in denen sie tatsächlich eingesetzt wird.",
+        },
+        {
+          number: "05",
+          title: "Gezielt automatisieren",
+          desc: "KI und Automatisierung sollen manuelle Arbeit und operative Komplexität dort reduzieren, wo ein konkreter Mehrwert entsteht.",
+        },
+        {
+          number: "06",
+          title: "Für Wachstum entwickeln",
+          desc: "Produkte sollten sich mit Unternehmen, Nutzern, Integrationen und neuen Anforderungen weiterentwickeln können.",
+        },
+      ],
+    },
     // ============================================================
     // CONTACT
     // ============================================================
@@ -1324,7 +1450,69 @@ export const siteContent: Record<Lang, SiteContent> = {
 
       cta: "আলোচনা শুরু করুন",
     },
+    // ============================================================
+    // MISSION & VISION
+    // ============================================================
 
+    missionVision: {
+      eyebrow: "মিশন ও ভিশন",
+
+      title: "দীর্ঘমেয়াদি ব্যবসায়িক মূল্য তৈরি করে এমন প্রযুক্তি নির্মাণ।",
+
+      desc: "VexnoraSoft বাস্তব অপারেশনাল সমস্যাকে নির্ভরযোগ্য ডিজিটাল সিস্টেমে রূপান্তর করে — ব্যবসায়িক বোঝাপড়া, সফটওয়্যার ইঞ্জিনিয়ারিং এবং বুদ্ধিমান প্রযুক্তিকে একত্রিত করে।",
+
+      mission: {
+        number: "01",
+        label: "আমাদের মিশন",
+        title: "বাস্তব ব্যবসায়িক প্রয়োজনকে কেন্দ্র করে প্রযুক্তি তৈরি করা।",
+        desc: "আমাদের মিশন হলো এমন সফটওয়্যার ডিজাইন ও তৈরি করা যা বাস্তব অপারেশনাল সমস্যা সমাধান করে, জটিল কার্যপ্রবাহ সহজ করে এবং প্রতিষ্ঠানকে আরও দক্ষভাবে পরিচালিত হতে সাহায্য করে। আমরা নিরাপদ, রক্ষণাবেক্ষণযোগ্য, স্কেলেবল এবং দীর্ঘমেয়াদে ব্যবহারযোগ্য সিস্টেম তৈরিতে গুরুত্ব দিই।",
+      },
+
+      vision: {
+        number: "02",
+        label: "আমাদের ভিশন",
+        title:
+          "উচ্চাকাঙ্ক্ষী প্রতিষ্ঠানের বিশ্বস্ত প্রযুক্তি ও ইঞ্জিনিয়ারিং পার্টনার হওয়া।",
+        desc: "আমাদের ভিশন হলো VexnoraSoft-কে একটি আন্তর্জাতিক সফটওয়্যার ইঞ্জিনিয়ারিং প্রতিষ্ঠানে পরিণত করা, যেখানে শক্তিশালী প্রযুক্তিগত দক্ষতার সঙ্গে বাস্তব ব্যবসায়িক বোঝাপড়াকে যুক্ত করে বিভিন্ন শিল্প ও বাজারের জন্য দীর্ঘমেয়াদি ডিজিটাল প্রোডাক্ট ও প্ল্যাটফর্ম তৈরি করা হবে।",
+      },
+
+      principlesEyebrow: "ইঞ্জিনিয়ারিং নীতিমালা",
+
+      principlesTitle: "আমরা যেভাবে প্রযুক্তি তৈরি করি।",
+
+      principles: [
+        {
+          number: "01",
+          title: "প্রথমে ব্যবসার সমস্যা বুঝুন",
+          desc: "প্রযুক্তিগত সিদ্ধান্ত শুরু হয় ব্যবসার কার্যপ্রবাহ, ব্যবহারকারী এবং পরিমাপযোগ্য লক্ষ্য বোঝার মাধ্যমে।",
+        },
+        {
+          number: "02",
+          title: "দীর্ঘমেয়াদের জন্য তৈরি করুন",
+          desc: "সিস্টেম তৈরি করার সময় রক্ষণাবেক্ষণ, স্কেল এবং ভবিষ্যৎ উন্নয়নকে গুরুত্ব দেওয়া হয়।",
+        },
+        {
+          number: "03",
+          title: "শুরু থেকেই নিরাপত্তা",
+          desc: "Security, permission, data protection এবং system integrity আর্কিটেকচার পর্যায় থেকেই বিবেচনা করা হয়।",
+        },
+        {
+          number: "04",
+          title: "বাস্তব ব্যবহারকারীর জন্য ডিজাইন",
+          desc: "সফটওয়্যার এমনভাবে তৈরি হওয়া উচিত যাতে তা বাস্তব ব্যবহারকারী, প্রক্রিয়া এবং কাজের পরিবেশের সঙ্গে মানানসই হয়।",
+        },
+        {
+          number: "05",
+          title: "উদ্দেশ্যপূর্ণ অটোমেশন",
+          desc: "AI এবং automation এমন জায়গায় ব্যবহার করা উচিত যেখানে তা পুনরাবৃত্তিমূলক কাজ ও অপারেশনাল জটিলতা কমিয়ে বাস্তব মূল্য তৈরি করে।",
+        },
+        {
+          number: "06",
+          title: "বৃদ্ধির জন্য প্রস্তুত",
+          desc: "ব্যবসা, ব্যবহারকারী, integration এবং নতুন প্রয়োজন বাড়ার সঙ্গে সঙ্গে সফটওয়্যারও যেন সহজে বিকশিত হতে পারে।",
+        },
+      ],
+    },
     // ============================================================
     // CONTACT
     // ============================================================
